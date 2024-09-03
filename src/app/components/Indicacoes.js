@@ -46,7 +46,7 @@ export default function Indicacoes() {
           </div>
           <div className="bg-white pt-6 md:pt-7 lg:pt-8 rounded-xl shadow-lg">
             <p className="text-center font-openSans text-[#354D4D] px-3 md:px-4 lg:px-5">
-              <span className="text-4xl md:text-5xl lg:text-6xl text-[#84D360]">"</span>A Safrasul Sementes, com sede em Campo Grande-MS, iniciou as atividades de produção, lavoura-pecuária, iniciou as atividades de produção, lavoura-pecuária.
+              <span className="text-4xl md:text-5xl lg:text-6xl text-[#84D360]">&quot;</span>A Safrasul Sementes, com sede em Campo Grande-MS, iniciou as atividades de produção, lavoura-pecuária, iniciou as atividades de produção, lavoura-pecuária.
             </p>
             <p className="pt-6 md:pt-7 lg:pt-8 pb-2 md:pb-3 font-openSans italic font-medium text-center">Nome e Empresa</p>
             <div className="py-1 bg-[#007608] rounded-b-xl"></div>
@@ -60,7 +60,7 @@ export default function Indicacoes() {
           </div>
           <div className="bg-white pt-6 md:pt-7 lg:pt-8 rounded-xl shadow-lg">
             <p className="text-center font-openSans text-[#354D4D] px-3 md:px-4 lg:px-5">
-              <span className="text-4xl md:text-5xl lg:text-6xl text-[#84D360]">"</span>A Safrasul Sementes, com sede em Campo Grande-MS, iniciou as atividades de produção, lavoura-pecuária, iniciou as atividades de produção, lavoura-pecuária.
+              <span className="text-4xl md:text-5xl lg:text-6xl text-[#84D360]">&quot;</span>A Safrasul Sementes, com sede em Campo Grande-MS, iniciou as atividades de produção, lavoura-pecuária, iniciou as atividades de produção, lavoura-pecuária.
             </p>
             <p className="pt-6 md:pt-7 lg:pt-8 pb-2 md:pb-3 font-openSans italic font-medium text-center">Nome e Empresa</p>
             <div className="py-1 bg-[#007608] rounded-b-xl"></div>
@@ -74,7 +74,8 @@ export default function Indicacoes() {
           </div>
           <div className="bg-white pt-6 md:pt-7 lg:pt-8 rounded-xl shadow-lg">
             <p className="text-center font-openSans text-[#354D4D] px-3 md:px-4 lg:px-5">
-              <span className="text-4xl md:text-5xl lg:text-6xl text-[#84D360]">"</span>A Safrasul Sementes, com sede em Campo Grande-MS, iniciou as atividades de produção, lavoura-pecuária, iniciou as atividades de produção, lavoura-pecuária.
+              <span className="text-4xl md:text-5xl lg:text-6xl text-[#84D360]">&quot;</span>
+              A Safrasul Sementes, com sede em Campo Grande-MS, iniciou as atividades de produção, lavoura-pecuária, iniciou as atividades de produção, lavoura-pecuária.
             </p>
             <p className="pt-6 md:pt-7 lg:pt-8 pb-2 md:pb-3 font-openSans italic font-medium text-center">Nome e Empresa</p>
             <div className="py-1 bg-[#007608] rounded-b-xl"></div>
