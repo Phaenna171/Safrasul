@@ -8,9 +8,31 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'banner-1': "url('/imgs/banners_site_sacarias_safrasul_1.jpg')",
+        'banner-2': "url('/imgs/banners_site_sacarias_safrasul_2.jpg')",
+        'brachiaria': "url('/imgs/bachiaria.png')",
+        'panicum': "url('/imgs/panicum.png')",
+        'leguminosas': "url('/imgs/leguminosas.png')",
+        'gramineas': "url('/imgs/gramineas.png')",
+      },
+      backgroundPosition: {
+        'bannerPosition-1': 'top right -8rem',
+        'responsive-b1': 'top right -22rem',
+        'responsive-p-b1': 'top right -19rem',
+        'bannerPosition-2': 'top right',
+        'responsive-b2': 'top right -10rem',
+      },
+      fontFamily: {
+        openSans: ['openSans', 'sans-serif'],
+        effra: ['effra', 'serif'],
+      },
+      fontWeight: {
+        light: 300,
+        normal: 400,
+        medium: 500,
+        semiBold: 600,
+        bold: 700,
+        extraBold: 800,
       },
     },
   },

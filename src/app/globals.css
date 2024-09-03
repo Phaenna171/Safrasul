@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -16,18 +19,109 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "openSans";
+  src: url("/fonts/openSans/OpenSans-Regular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "openSans";
+  src: url("/fonts/openSans/OpenSans-Medium.ttf") format('truetype');
+  font-weight: 500; /* Medium weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "openSans";
+  src: url("/fonts/openSans/OpenSans-SemiBold.ttf") format('truetype');
+  font-weight: 600; /* Semi-Bold weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "openSans";
+  src: url("/fonts/openSans/OpenSans-Light.ttf") format('truetype');
+  font-weight: 300; /* Light weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "openSans";
+  src: url("/fonts/openSans/OpenSans-ExtraBold.ttf") format('truetype');
+  font-weight: 800; /* Extra-Bold weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "openSans";
+  src: url("/fonts/openSans/OpenSans-Bold.ttf") format('truetype');
+  font-weight: 700; /* Bold weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "openSans";
+  src: url("/fonts/openSans/OpenSans-MediumItalic.ttf") format('truetype');
+  font-weight: 500; /* Medium weight */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "effra";
+  src: url("/fonts/effra/Effra_Trial_Md.ttf") format('truetype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "effra";
+  src: url("/fonts/effra/Effra_Trial_Lt.ttf") format('truetype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "effra";
+  src: url("/fonts/effra/Effra_Trial_Hair.ttf") format('truetype');
+  font-weight: 100; /* Hairline */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "effra";
+  src: url("/fonts/effra/Effra_Trial_Blk.ttf") format('truetype');
+  font-weight: 700; /* Black/Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "effra";
+  src: url("/fonts/effra/Effra_Trial.ttf") format('truetype');
+  font-weight: 400; /* Normal */
+  font-style: normal;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px; /* Ajuste conforme necessário */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Garante que os dots fiquem sobre a imagem */
+}
+
+.slick-dots li button:before {
+  font-size: 12px; /* Ajuste o tamanho do ícone do dot */
+  color: #DFE0DF; /* Cor dos dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #EF7B0F; /* Cor do dot ativo */
 }
