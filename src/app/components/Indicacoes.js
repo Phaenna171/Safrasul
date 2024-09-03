@@ -25,6 +25,8 @@ export default function Indicacoes() {
         },
       },
     ],
+    arrows: false // Desativa as setas internas do slider
+
   };
 
   const goToNext = () => {
@@ -36,7 +38,7 @@ export default function Indicacoes() {
   };
 
   return (
-    <div className="relative bg-[#F2F2F2] px-32 md:px-16 lg:px-32 xl:px-64 overflow-hidden">
+    <div className="relative bg-[#F2F2F2] px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64 overflow-hidden">
       <h1 className='text-center font-openSans font-bold text-xl md:text-4xl text-[#354D4D] md:pb-12 pt-8 md:pt-16'>Quem compra, indica</h1>
       <Slider ref={sliderRef} {...settings}>
         {/* SLIDE 1 */}
@@ -86,13 +88,13 @@ export default function Indicacoes() {
       {/* Chevron Left & Right */}
       <img
         src="./icons/chevron-left-green.svg"
-        className="absolute left-4 md:left-8 lg:left-20 top-1/2 transform -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 cursor-pointer"
+        className="absolute left-0 md:left-8 lg:left-20 top-1/2 transform -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 cursor-pointer"
         alt="Chevron Left"
         onClick={goToPrev}
       />
       <img
         src="./icons/chevron-right-green.svg"
-        className="absolute right-4 md:right-8 lg:right-20 top-1/2 transform -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 cursor-pointer"
+        className="absolute right-0 md:right-8 lg:right-20 top-1/2 transform -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 cursor-pointer"
         alt="Chevron Right"
         onClick={goToNext}
       />
