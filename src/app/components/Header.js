@@ -42,7 +42,7 @@ export default function Header() {
             <a
               href="#"
               onClick={() => handleClick("home")}
-              className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "home" ? "border-b-4 border-[#F17708] text-[#197E3F]" : ""
+              className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "home" ? "border-b-4 border-[#F17708] text-customGreen" : ""
                 }`}
             >
               Home
@@ -50,7 +50,7 @@ export default function Header() {
             <a
               href="#"
               onClick={() => handleClick("quemSomos")}
-              className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "quemSomos" ? "border-b-4 border-[#F17708] text-[#197E3F]" : ""
+              className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "quemSomos" ? "border-b-4 border-[#F17708] text-customGreen" : ""
                 }`}
             >
               Quem Somos
@@ -58,7 +58,7 @@ export default function Header() {
             <a
               href="#"
               onClick={() => handleClick("produtos")}
-              className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "produtos" ? "border-b-4 border-[#F17708] text-[#197E3F]" : ""
+              className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "produtos" ? "border-b-4 border-[#F17708] text-customGreen" : ""
                 }`}
             >
               Produtos
@@ -66,7 +66,7 @@ export default function Header() {
             <a
               href="#"
               onClick={() => handleClick("contato")}
-              className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "contato" ? "border-b-4 border-[#F17708] text-[#197E3F]" : ""
+              className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "contato" ? "border-b-4 border-[#F17708] text-customGreen" : ""
                 }`}
             >
               Contato

@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        customGreen: '#116735',
+      },
       backgroundImage: {
         'banner-1': "url('/imgs/banners_site_sacarias_safrasul_1.jpg')",
         'banner-2': "url('/imgs/banners_site_sacarias_safrasul_2.jpg')",

@@ -88,13 +88,13 @@ export default function Indicacoes() {
       {/* Chevron Left & Right */}
       <img
         src="./icons/chevron-left-green.svg"
-        className="absolute left-0 md:left-8 lg:left-20 top-1/2 transform -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 cursor-pointer"
+        className="absolute top-[60%] left-0 md:left-8 lg:left-20 top-1/2 transform -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 cursor-pointer"
         alt="Chevron Left"
         onClick={goToPrev}
       />
       <img
         src="./icons/chevron-right-green.svg"
-        className="absolute right-0 md:right-8 lg:right-20 top-1/2 transform -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 cursor-pointer"
+        className="absolute top-[60%] right-0 md:right-8 lg:right-20 top-1/2 transform -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 cursor-pointer"
         alt="Chevron Right"
         onClick={goToNext}
       />

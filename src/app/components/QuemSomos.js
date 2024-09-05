@@ -25,13 +25,13 @@ export default function QuemSomos() {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-8 lg:px-16 py-8 gap-4 md:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 pl-4 md:pl-8 lg:pl-16 py-8 gap-4 md:gap-8">
         {/* TEXTOS */}
         <div className="flex flex-col justify-center md:pl-8 lg:pl-16 text-center md:text-left">
           <h1 className="text-[#354D4D] font-openSans text-2xl md:text-3xl lg:text-4xl font-bold pt-4 md:pt-8">
             Quem Somos
           </h1>
-          <p className="text-[#354D4D] font-openSans py-4 md:py-6 leading-7 font-medium">
+          <p className="text-[#354D4D] font-openSans py-4 md:py-6 leading-7 font-medium lg:pr-32">
             Iniciamos nossas atividades em 1998, focados na produção beneficiamento e comercialização de sementes forrageiras. Hoje, somos líderes no mercado, oferecendo sementes de alta pureza e adaptadas a diversas condições climáticas e de solo, graças ao nosso compromisso com a excelência e ao investimento em pesquisa e desenvolvimento.
           </p>
           <button className="text-white bg-[#F07A10] py-2 px-4 md:py-2 md:px-6 lg:py-2 lg:px-8 rounded-full max-w-[220px] mx-auto md:mx-0">

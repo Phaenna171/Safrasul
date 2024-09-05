@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Header from "../components/Header";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
@@ -6,10 +7,13 @@ export default function Home() {
 
   return (
     <>
-      <GrupoWhatsApp/>
-      <Header/>
-      <Main/>
-      <Footer/>
+      <Head>
+        <title>Safrasul Sementes</title>
+      </Head>
+      <GrupoWhatsApp />
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
 }
