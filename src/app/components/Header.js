@@ -1,15 +1,28 @@
-import React, { useState } from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from 'next/link';
 
 export default function Header() {
+  const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("home");
 
-  const handleClick = (link) => {
-    setActiveLink(link);
+  const getActiveLink = () => {
+    if (pathname === "/") return "home";
+    if (pathname === "/about") return "about";
+    if (pathname === "/products") return "products";
+    if (pathname === "/contact") return "contact";
+    return "";
   };
 
+  const [activeLink, setActiveLink] = useState(getActiveLink);
+
+  useEffect(() => {
+    setActiveLink(getActiveLink());
+  }, [pathname]);
 
   return (
     <div className="relative bg-[#FFF]">
@@ -39,39 +52,22 @@ export default function Header() {
             </button>
           </div>
           <PopoverGroup className="hidden lg:flex lg:gap-x-12 items-center">
-            <a
-              href="#"
-              onClick={() => handleClick("home")}
-              className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "home" ? "border-b-4 border-[#F17708] text-customGreen" : ""
-                }`}
-            >
+            <Link href="/" className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "home" ? "border-b-4 border-[#F17708] text-customGreen" : ""
+              }`}>
               Home
-            </a>
-            <a
-              href="#"
-              onClick={() => handleClick("quemSomos")}
-              className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "quemSomos" ? "border-b-4 border-[#F17708] text-customGreen" : ""
-                }`}
-            >
+            </Link>
+            <Link href="/about" className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "about" ? "border-b-4 border-[#F17708] text-customGreen" : ""
+              }`}>
               Quem Somos
-            </a>
-            <a
-              href="#"
-              onClick={() => handleClick("produtos")}
-              className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "produtos" ? "border-b-4 border-[#F17708] text-customGreen" : ""
-                }`}
-            >
+            </Link>
+            <Link href="/products" className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "products" ? "border-b-4 border-[#F17708] text-customGreen" : ""
+              }`}>
               Produtos
-            </a>
-            <a
-              href="#"
-              onClick={() => handleClick("contato")}
-              className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "contato" ? "border-b-4 border-[#F17708] text-customGreen" : ""
-                }`}
-            >
+            </Link>
+            <Link href="/contact" className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "contact" ? "border-b-4 border-[#F17708] text-customGreen" : ""
+              }`}>
               Contato
-            </a>
-
+            </Link>
           </PopoverGroup>
         </nav>
         <Dialog
@@ -102,30 +98,30 @@ export default function Header() {
             <div className="mt-6">
               <div className="-my-6 divide-y divide-gray-200">
                 <div className="py-6 space-y-2">
-                  <a
-                    href="#"
-                    className="block py-2 text-base font-semibold text-gray-900 hover:bg-gray-50"
+                  <Link
+                    href="/"
+                    className={`block py-2 text-base font-semibold ${activeLink === "home" ? "text-customGreen" : "text-gray-900"} hover:bg-gray-50`}
                   >
                     Home
-                  </a>
-                  <a
-                    href="#"
-                    className="block py-2 text-base font-semibold text-gray-900 hover:bg-gray-50"
+                  </Link>
+                  <Link
+                    href="/about"
+                    className={`block py-2 text-base font-semibold ${activeLink === "about" ? "text-customGreen" : "text-gray-900"} hover:bg-gray-50`}
                   >
-                    Quem somos
-                  </a>
-                  <a
-                    href="#"
-                    className="block py-2 text-base font-semibold text-gray-900 hover:bg-gray-50"
+                    Quem Somos
+                  </Link>
+                  <Link
+                    href="/products"
+                    className={`block py-2 text-base font-semibold ${activeLink === "products" ? "text-customGreen" : "text-gray-900"} hover:bg-gray-50`}
                   >
                     Produtos
-                  </a>
-                  <a
-                    href="#"
-                    className="block py-2 text-base font-semibold text-gray-900 hover:bg-gray-50"
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className={`block py-2 text-base font-semibold ${activeLink === "contact" ? "text-customGreen" : "text-gray-900"} hover:bg-gray-50`}
                   >
                     Contato
-                  </a>
+                  </Link>
                 </div>
                 <div className="py-6 text-start">
                   <button className="text-white bg-[#F07A10] py-2 px-4 md:py-2 md:px-6 lg:py-2 lg:px-8 rounded-full max-w-[220px] mx-auto md:mx-0">

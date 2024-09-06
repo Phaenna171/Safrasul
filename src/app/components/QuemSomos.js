@@ -60,9 +60,6 @@ export default function QuemSomos() {
               <img src="/imgs/quem-somos-slide1.jpg" alt="Imagem 1" className="w-full h-auto max-h-[300px] md:max-h-[400px] lg:max-h-[500px] rounded-lg object-cover" />
             </div>
             <div>
-              <img src="/imgs/quem-somos-slide2.jpg" alt="Imagem 2" className="w-full h-auto max-h-[300px] md:max-h-[400px] lg:max-h-[500px] rounded-lg object-cover" />
-            </div>
-            <div>
               <img src="/imgs/quem-somos-slide3.jpg" alt="Imagem 3" className="w-full h-auto max-h-[300px] md:max-h-[400px] lg:max-h-[500px] rounded-lg object-cover" />
             </div>
           </Slider>

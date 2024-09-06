@@ -7,9 +7,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Safrasul Sementes</title>
-      </Head>
       <GrupoWhatsApp />
       <Header />
       <Main />
