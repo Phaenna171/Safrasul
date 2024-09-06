@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Safrasul Sementes
 
-## Getting Started
+**Safrasul Sementes** é um site dedicado à comercialização de sementes, oferecendo uma plataforma fácil e eficiente para compra e cotação de produtos para cultivo. 
 
-First, run the development server:
+## 🚀 Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Catálogo de Produtos**: Navegue e descubra nossa variedade de sementes.
+- **Cotação Online**: Solicite uma cotação diretamente pelo site.
+- **Informações de Contato**: Encontre informações e formas de entrar em contato conosco.
+- **Design Responsivo**: Navegue com facilidade em qualquer dispositivo, seja desktop ou móvel.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Tecnologias Utilizadas
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Next.js**: Framework React para renderização do lado do servidor e geração de sites estáticos.
+- **Tailwind CSS**: Framework CSS para design responsivo e estilização rápida.
+- **React**: Biblioteca para construir interfaces de usuário interativas.
+- **Vercel**: Plataforma de hospedagem para projetos Next.js.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 📁 Estrutura do Projeto
 
-## Learn More
+- **`/public`**: Contém arquivos estáticos como imagens e ícones.
+- **`/src/app`**: Contém arquivos e páginas principais do Next.js.
+- **`/src/components`**: Contém componentes React reutilizáveis.
+- **`/src/styles`**: Contém estilos e configurações CSS.
 
-To learn more about Next.js, take a look at the following resources:
+## 📦 Instalação
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone o repositório:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/username/safrasul-sementes.git
 
-## Deploy on Vercel
+2. Navegue até o diretório do projeto:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  cd safrasul-sementes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. Instale as dependências:
+  npm install
+
+4. Inicie o servidor de desenvolvimento:
+  npm run dev
+
+5. Abra seu navegador e acesse http://localhost:3000 para ver o site em funcionamento.
+
+
+## 📝 Contribuições
+Se você deseja contribuir com o projeto, sinta-se à vontade para fazer um fork e enviar um pull request. Para relatórios de bugs ou sugestões, crie uma issue.
+
+## Contato
+Para qualquer dúvida ou sugestão, entre em contato com:
+
+Pedro Victor Lima - www.linkedin.com/in/pedro-victor-lima-dev-jr
