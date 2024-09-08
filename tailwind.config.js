@@ -24,6 +24,7 @@ module.exports = {
         'responsive-p-b1': 'top right -19rem',
         'bannerPosition-2': 'top right',
         'responsive-b2': 'top right -10rem',
+        'mercadoExterno': 'bottom left',
       },
       fontFamily: {
         openSans: ['openSans', 'sans-serif'],

@@ -1,15 +1,14 @@
-import Head from "next/head";
 import Header from "../components/Header";
-import Main from "../components/Main";
+import MainIndex from "../components/index/MainIndex";
 import Footer from "../components/Footer";
-import GrupoWhatsApp from "../components/GrupoWhatsApp";
+import GrupoWhatsApp from "../components/index/GrupoWhatsApp";
 export default function Home() {
 
   return (
     <>
       <GrupoWhatsApp />
       <Header />
-      <Main />
+      <MainIndex />
       <Footer />
     </>
   );
