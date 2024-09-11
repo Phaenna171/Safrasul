@@ -1,10 +1,12 @@
 'use client'
 import React, { useRef } from 'react';
 import Slider from 'react-slick';
+import Image from 'next/image';
+
 
 
 export default function Aliancas() {
-  
+
   const sliderRef = useRef(null);
 
   const settings = {
@@ -39,15 +41,37 @@ export default function Aliancas() {
         </div>
         <div className="flex flex-row items-center gap-4 lg:gap-8 md:flex-row md:items-center justify-center">
           <img src="/icons/chevron-left-green.svg" onClick={goToPrev} className=" cursor-pointer" />
-          <Slider ref={sliderRef} {...settings} className='w-[200px] h-auto lg:w-[300px] md:h-auto custom-slider'>
-            <div className="flex justify-center items-center">
-              <img src="/imgs/embrapa.png" alt='Embrapa Logo' className="w-auto h-20 sm:h-24 md:h-28" />
+          <Slider ref={sliderRef} {...settings} className='w-[200px] h-auto lg:w-[200px] md:h-auto custom-slider'>
+            <div className="relative flex justify-center items-center">
+              <Image
+                src="/imgs/embrapa.png"
+                alt="Embrapa Logo"
+                width={250}  // Define a largura máxima
+                height={93.02} // Define a altura máxima proporcional
+                className="w-auto h-20 sm:h-24 md:h-20"
+                unoptimized={true} // Desabilita a otimização de imagens
+              />
             </div>
             <div className="flex justify-center items-center">
-              <img src="/imgs/unipasto.png" alt='Unipasto Logo' className="w-auto h-20 sm:h-24 md:h-28" />
+              <Image
+                src="/imgs/unipasto.png"
+                alt="Unipasto Logo"
+                width={250}  // Define a largura máxima
+                height={96.5} // Define a altura máxima proporcional
+                className="w-auto h-20 sm:h-24 md:h-20"
+                unoptimized={true} // Desabilita a otimização de imagens
+              />
             </div>
             <div className="flex justify-center items-center">
-              <img src="/imgs/dlf.png" alt='DLF Logo' className="w-auto h-20 sm:h-24 md:h-28" />
+              <Image
+                src="/imgs/dlf.png"
+                alt="DLF Logo"
+                objectFit="contain"
+                width={250}  // Define a largura máxima
+                height={96.26} // Define a altura máxima proporcional
+                className="w-auto h-20 sm:h-24 md:h-20"
+                unoptimized={true} // Desabilita a otimização de imagens
+              />
             </div>
           </Slider>
           <img src="/icons/chevron-right-green.svg" onClick={goToNext} className=" cursor-pointer" />

@@ -22,7 +22,7 @@ export default function Industrializacao() {
             className="rounded-3xl"
           />
           <p className="absolute left-8 bottom-8 text-white font-openSans text-lg sm:text-xl md:text-2xl font-bold">
-            UBS Campo Grande
+            UBS Formoso
           </p>
         </div>
       </div>

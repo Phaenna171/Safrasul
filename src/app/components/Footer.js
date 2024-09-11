@@ -18,8 +18,8 @@ export default function Footer() {
             <div className="grid grid-cols-2 md:gap-x-6 lg:flex flex-wrap pt-4">
               <div className=" mb-10 md:mb-0 w-full md:w-auto">
                 <h2 className="text-white text-center md:text-start font-openSans text-sm font-medium">Campo Grande - MS</h2>
-                <p className="text-white text-center md:text-start font-openSans text-sm font-light">Polo Empresarial Norte</p>
-                <p className="text-white text-center md:text-start font-openSans text-sm font-light">Rua Carlos Henrique Spengler, 1056</p>
+                <p className="text-white text-center md:text-start font-openSans text-sm font-light">Rua Lagoa Rica, 42</p>
+                <p className="text-white text-center md:text-start font-openSans text-sm font-light">Jardim Panorama</p>
                 <p className="text-white text-center md:text-start font-openSans text-sm font-light">CEP: 79018 800</p>
                 <h2 className="text-white text-center md:text-start font-openSans text-sm font-medium mt-4">Telefones:</h2>
                 <p className="text-white text-center md:text-start font-openSans text-sm font-light">0800 540 0070</p>
@@ -46,8 +46,8 @@ export default function Footer() {
 
               <div className=" mb-4 md:mb-0 w-full md:w-auto">
                 <h2 className="text-white text-center md:text-start font-openSans text-sm font-medium">Montes Claros - MG</h2>
-                <p className="text-white text-center md:text-start font-openSans text-sm font-light">Bairro: Formosinha</p>
-                <p className="text-white text-center md:text-start font-openSans text-sm font-light">Avenida Brasília, 1440</p>
+                <p className="text-white text-center md:text-start font-openSans text-sm font-light">Avenida Governador Magalhães</p>
+                <p className="text-white text-center md:text-start font-openSans text-sm font-light">Pinto, 2191A</p>
                 <p className="text-white text-center md:text-start font-openSans text-sm font-light">CEP: 73813 010</p>
                 <h2 className="text-white text-center md:text-start font-openSans text-sm font-medium mt-4">Telefones:</h2>
                 <p className="text-white text-center md:text-start font-openSans text-sm font-light">(38) 99885 7961</p>
