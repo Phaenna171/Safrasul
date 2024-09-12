@@ -18,8 +18,8 @@ export default function Textos() {
         ))}
         <h2 className="font-openSans font-bold text-[#354D4D] tracking-[0.05rem]  py-4">OBSERVAÇÕES:</h2>
         {datas[selectedCategory].textos[selectedSeed].obs.map((observacao, index) => (
-          <ul>
-            <li key={index} className="text-[#354D4D] font-openSans text-lg font-medium">
+          <ul key={index}>
+            <li className="text-[#354D4D] font-openSans text-lg font-medium">
               {observacao}
             </li>
           </ul>

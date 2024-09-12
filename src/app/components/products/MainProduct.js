@@ -11,7 +11,7 @@ import { ProductContext } from '../../products/context/ProductContext';
 
 export default function MainProducts() {
 
-  const { datas, descriptions, selectedCategory, selectedSeed, handleSeedSelect } = useContext(ProductContext)
+  const { datas, selectedCategory, selectedSeed, handleSeedSelect } = useContext(ProductContext)
 
   return (
     <>
