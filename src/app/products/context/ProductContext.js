@@ -48,6 +48,32 @@ export const ProductProvider = ({ children }) => {
       },
 
       // DADOS DAS SEMENTES
+      intro: {
+        0:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+        1:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+        2:{
+         img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+        3:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+        4:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+        5:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+      },
       cabecalho: {
         0: {
           title: "Marándu",
@@ -517,6 +543,20 @@ export const ProductProvider = ({ children }) => {
       },
 
       // DADOS DA SEMENTE
+      intro: {
+        0:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+        1:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+        2:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+      },
       cabecalho: {
         0: {
           title: "Panicum1",
@@ -787,6 +827,32 @@ export const ProductProvider = ({ children }) => {
       },
 
       // DADOS DA SEMENTE
+      intro: {
+        0:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+        1:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+        2:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+        3:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+        4:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+        5:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+      },
       cabecalho: {
         0: {
           title: "Leguminosas1",
@@ -1259,6 +1325,20 @@ export const ProductProvider = ({ children }) => {
       },
 
       // DADOS DA SEMENTE
+      intro: {
+        0:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+        1:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+        2:{
+          img:"/imgs/bg-intro-seed.png",
+          txt:"Produtividade e resultado que seu campo precisa!"
+        },
+      },
       cabecalho: {
         0: {
           title: "Gramíneas1",
