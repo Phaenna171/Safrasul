@@ -5,7 +5,7 @@ import MainAbout from "../components/about/MainAbout"
 import React, { useRef } from "react";
 
 
-export default function about(){
+export default function About(){
   const footerRef = useRef(null);
 
   return (
