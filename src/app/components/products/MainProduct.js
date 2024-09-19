@@ -1,5 +1,5 @@
 'use client'
-import { useContext } from 'react';
+import { React, useRef ,useContext } from 'react';
 import Header from "../Header";
 import ImageGrid from "./ImageGrid";
 import Description from './Description';
@@ -12,10 +12,11 @@ import { ProductContext } from '../../products/context/ProductContext';
 export default function MainProducts() {
 
   const { datas, selectedCategory, selectedSeed, handleSeedSelect } = useContext(ProductContext)
+  const footerRef = useRef(null);
 
   return (
     <>
-      <Header />
+      <Header footerRef={footerRef}/>
       {/* MENU */}
       <Menu />
       {/* Condicional: Exibe a grid ou a descrição da semente */}
@@ -33,7 +34,7 @@ export default function MainProducts() {
       ) : (
         <Semente />
       )}
-      <Footer />
+      <Footer ref={footerRef}/>
 
     </>
 

@@ -1,10 +1,11 @@
+import React, { forwardRef } from "react";
 import Form from "./Form";
 
-export default function Footer() {
+const Footer = forwardRef((props, ref) => {
   return (
     <>
       <Form />
-      <div className="bg-[#0E622E]">
+      <div className="bg-[#0E622E]" ref={ref}>
         <div className="flex flex-col md:flex-row border-b-2 border-white py-12 md:pt-0 justify-center md:gap-8 xl:gap-32">
           <div className="flex justify-center items-center ">
             <img src="/imgs/logo-branco.png" className="w-40 md:w-auto" />
@@ -16,7 +17,7 @@ export default function Footer() {
               </h1>
             </div>
             <div className="grid grid-cols-2 md:gap-x-6 lg:flex flex-wrap pt-4">
-              <div className=" mb-10 md:mb-0 w-full md:w-auto">
+            <div className=" mb-10 md:mb-0 w-full md:w-auto">
                 <h2 className="text-white text-center md:text-start font-openSans text-sm font-medium">Campo Grande - MS</h2>
                 <p className="text-white text-center md:text-start font-openSans text-sm font-light">Rua Lagoa Rica, 42</p>
                 <p className="text-white text-center md:text-start font-openSans text-sm font-light">Jardim Panorama</p>
@@ -75,4 +76,7 @@ export default function Footer() {
       </div>
     </>
   );
-}
+});
+
+Footer.displayName = "Footer";
+export default Footer;

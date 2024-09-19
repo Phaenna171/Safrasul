@@ -6,7 +6,7 @@ import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from 'next/link';
 
-export default function Header() {
+export default function Header({ footerRef }) {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -23,6 +23,12 @@ export default function Header() {
   useEffect(() => {
     setActiveLink(getActiveLink());
   }, [pathname]);
+
+  const scrollToFooter = () => {
+    if (footerRef && footerRef.current) {
+      footerRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="relative bg-[#FFF]">
@@ -64,8 +70,15 @@ export default function Header() {
               }`}>
               Produtos
             </Link>
-            <Link href="/contact" className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "contact" ? "border-b-4 border-[#F17708] text-customGreen" : ""
-              }`}>
+            <Link
+              href="/contact"
+              className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "contact" ? "border-b-4 border-[#F17708] text-customGreen" : ""
+                }`}
+              onClick={(e) => {
+                e.preventDefault(); // Prevent default link behavior
+                scrollToFooter();
+              }}
+            >
               Contato
             </Link>
           </PopoverGroup>
@@ -116,17 +129,16 @@ export default function Header() {
                   >
                     Produtos
                   </Link>
-                  <Link
-                    href="/contact"
+                  <a
+                    href="#"
                     className={`block py-2 text-base font-semibold ${activeLink === "contact" ? "text-customGreen" : "text-gray-900"} hover:bg-gray-50`}
+                    onClick={(e) => {
+                      e.preventDefault(); // Prevent default link behavior
+                      scrollToFooter();
+                    }}
                   >
                     Contato
-                  </Link>
-                </div>
-                <div className="py-6 text-start">
-                  <button className="text-white bg-[#F07A10] py-2 px-4 md:py-2 md:px-6 lg:py-2 lg:px-8 rounded-full max-w-[220px] mx-auto md:mx-0">
-                    Faça sua Cotação
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
