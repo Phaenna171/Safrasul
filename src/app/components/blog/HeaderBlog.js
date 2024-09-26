@@ -6,7 +6,7 @@ import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from 'next/link';
 
-export default function Header({ footerRef }) {
+export default function HeaderBlog({ footerRef }) {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -15,6 +15,7 @@ export default function Header({ footerRef }) {
     if (pathname === "/about") return "about";
     if (pathname === "/products") return "products";
     if (pathname === "/blog") return "blog";
+    if (pathname === "/posts") return "posts";
     if (pathname === "/contact") return "contact";
     return "";
   };
@@ -32,7 +33,7 @@ export default function Header({ footerRef }) {
   };
 
   return (
-    <div className="relative bg-[#FFF]">
+    <div className="relative bg-[#136736]">
       <header className="bg-gradient-header px-4 md:px-8 lg:px-16 xl:px-40 py-1">
         <nav
           aria-label="Global"
@@ -43,7 +44,7 @@ export default function Header({ footerRef }) {
               <span className="sr-only">Your Company</span>
               <img
                 alt="Logo"
-                src="/imgs/logo.png"
+                src="/imgs/logo-branco.png"
                 className="h-10 md:h-12 w-auto"
               />
             </a>
@@ -52,32 +53,32 @@ export default function Header({ footerRef }) {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(true)}
-              className="inline-flex items-center justify-center p-2 text-[777]"
+              className="inline-flex items-center justify-center p-2 text-white"
             >
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="h-6 w-6" />
             </button>
           </div>
           <PopoverGroup className="hidden lg:flex lg:gap-x-12 items-center">
-            <Link href="/" className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "home" ? "border-b-4 border-[#F17708] text-customGreen" : ""
+            <Link href="/" className={`text-lg leading-6 text-white font-openSans  ${activeLink === "home" ? "border-b-4 border-[#F17708] text-customGreen" : ""
               }`}>
               Home
             </Link>
-            <Link href="/about" className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "about" ? "border-b-4 border-[#F17708] text-customGreen" : ""
+            <Link href="/about" className={`text-lg leading-6 text-white font-openSans  ${activeLink === "about" ? "border-b-4 border-[#F17708] text-customGreen" : ""
               }`}>
               Quem Somos
             </Link>
-            <Link href="/products" className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "products" ? "border-b-4 border-[#F17708] text-customGreen" : ""
+            <Link href="/products" className={`text-lg leading-6 text-white font-openSans  ${activeLink === "products" ? "border-b-4 border-[#F17708] text-customGreen" : ""
               }`}>
               Produtos
             </Link>
-            <Link href="/blog" className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "blog" ? "border-b-4 border-[#F17708] text-customGreen" : ""
+            <Link href="/blog" className={`text-lg leading-6 text-white font-openSans ${activeLink === "blog" || "posts" ? "border-b-4 border-[#F17708] text-customGreen" : ""
               }`}>
               Blog
             </Link>
             <Link
               href="/contact"
-              className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "contact" ? "border-b-4 border-[#F17708] text-customGreen" : ""
+              className={`text-lg leading-6 text-white font-openSans  ${activeLink === "contact" ? "border-b-4 border-[#F17708] text-customGreen" : ""
                 }`}
               onClick={(e) => {
                 e.preventDefault(); // Prevent default link behavior

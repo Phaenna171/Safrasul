@@ -12,17 +12,13 @@ export default function Textos() {
         {datas[selectedCategory].textos[selectedSeed].introducao.map((introducao, index) => (
           <p key={index} className="text-[#354D4D] font-openSans text-lg font-medium">{introducao}</p>
         ))}
-        <h2 className="font-openSans font-bold text-[#354D4D] tracking-[0.05rem] pt-8">VANTAGENS:</h2>
+        <h2 className="font-openSans font-bold text-[#354D4D] tracking-[0.05rem] pt-16 pb-4">VANTAGENS:</h2>
         {datas[selectedCategory].textos[selectedSeed].vantagens.map((vantagem, index) => (
-          <p key={index} className="text-[#354D4D] font-openSans text-lg font-medium py-2 md:py-4">{vantagem}</p>
+          <p key={index} className="text-[#354D4D] font-openSans text-lg font-medium pb-2 md:pb-4">{vantagem}</p>
         ))}
-        <h2 className="font-openSans font-bold text-[#354D4D] tracking-[0.05rem]  py-4">OBSERVAÇÕES:</h2>
+        <h2 className="font-openSans font-bold text-[#354D4D] tracking-[0.05rem] pt-16 pb-4">OBSERVAÇÕES:</h2>
         {datas[selectedCategory].textos[selectedSeed].obs.map((observacao, index) => (
-          <ul key={index}>
-            <li className="text-[#354D4D] font-openSans text-lg font-medium">
-              {observacao}
-            </li>
-          </ul>
+           <p key={index} className="text-[#354D4D] font-openSans text-lg font-medium pb-2 md:pb-4">{observacao}</p>
         ))}
       </div>
 
