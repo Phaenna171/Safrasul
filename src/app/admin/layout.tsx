@@ -1,13 +1,13 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
+import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Safrasul Sementes",
-  description: "Descrição da sua página aqui",
+  title: "Admin | Safrasul",
   icons: {
-    icon: "/imgs/logo.svg", // O caminho relativo para o seu ícone
+    icon: "/imgs/logo.svg",
   },
 };
 
