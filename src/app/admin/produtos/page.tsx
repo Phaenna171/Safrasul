@@ -1,49 +1,48 @@
 'use client'
 import Image from "next/image";
-import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AddProductModal from "./add-product.modal";
 import DeleteProductModal from "./delete-product.modal";
+import productService from "@/services/product.service";
 
 export default function Page() {
     const [isAddModalOpen, setAddModalOpen] = useState(false);
     const [isDeleteModalOpen, setDeleteModalOpen] = useState(false);
+    const [products, setProducts] = useState([]);
 
-    const products = [
-        { title: "MARANDÚ", description: "Brachiaria brizantha cv. Marandú", imageUrl: "/imgs/post-secundario.png" },
-        { title: "MARANDÚ", description: "Brachiaria brizantha cv. Marandú", imageUrl: "/imgs/post-secundario.png" },
-        { title: "MARANDÚ", description: "Brachiaria brizantha cv. Marandú", imageUrl: "/imgs/post-secundario.png" },
-        { title: "MARANDÚ", description: "Brachiaria brizantha cv. Marandú", imageUrl: "/imgs/post-secundario.png" },
-    ];
+    useEffect(() => {
+        getData()
+        async function getData() {
+            const { data } = await productService.getAll()
+            console.log(data)
+            setProducts(data)
+        }
+    }, []);
 
     return (
         <main className="p-10 bg-white h-full">
             <h1 className="text-4xl font-bold mb-10">PRODUTOS</h1>
 
             <div className="flex gap-6 justify-between flex-wrap">
-                <Link
-                    href="/admin/produtos/add"
-                    className="relative flex flex-col gap-4 h-fit"
-                >
-                    <div className="flex justify-center items-center relative md:w-[209px] w-full md:h-[175px] h-full z-0 top-0 left-0 rounded-lg overflow-hidden ">
+                <div className="relative flex flex-col gap-4 h-fit">
+                    <div onClick={() => setAddModalOpen(true)} className="cursor-pointer flex justify-center items-center relative md:w-[209px] w-full md:h-[175px] h-full z-0 top-0 left-0 rounded-lg overflow-hidden ">
                         <Image unoptimized width={300} height={300} alt="Card produtos" className="w-full h-full object-cover" src="/imgs/admin-produtos.png" />
                         <div className="bg-black absolute w-full h-full top-0 left-0 bg-opacity-70"></div>
                         <span className="absolute text-white text-7xl font-black z-10">+</span>
-
                     </div>
-                    <div className="h-[34px] px-2.5 py-[5px] bg-[#056735] rounded-lg justify-center items-center gap-2.5 inline-flex">
-                        <div>
-                            <span className="text-white text-xs font-black">+</span>
-                            <span className="text-white text-xs font-normal"> Adicionar novo produto</span>
-                        </div>
-                    </div>
-                </Link>
+                    <button onClick={() => setAddModalOpen(true)} className="h-[34px] px-2.5 py-[5px] bg-[#056735] rounded-lg justify-center items-center gap-2.5 inline-flex">
+                        <span className="text-white text-xs font-black">+</span>
+                        <span className="text-white text-xs font-normal"> Adicionar novo produto</span>
+                    </button>
+                </div>
 
-                <div className="grid grid-cols-4 gap-6">
-                    {products.map((product, index) => (
-                        <div key={index} className="w-[209px] h-[217px] flex-col justify-start items-center gap-2 inline-flex relative">
+                <div className="flex flex-wrap md:gap-6 gap-14">
+                    {products.length == 0 && <p className="text-red-600">Nenhum produto adicionado</p>}
+
+                    {products?.map((product, index) => (
+                        <div key={index} className="w-[209px] h-[217px] flex-col items-center gap-2 inline-flex relative">
                             <Image
-                                src={product.imageUrl}
+                                src={product.carouselPhotos[0]}
                                 alt={product.title}
                                 width={250}
                                 height={200}
@@ -53,7 +52,7 @@ export default function Page() {
 
                             <div className="absolute top-0 left-0 m-3 text-white">
                                 <h2 className="font-bold">{product.title}</h2>
-                                <h3>{product.description}</h3>
+                                <h3>{product.subtitle}</h3>
                             </div>
 
                             <div className="items-center gap-3 inline-flex w-full">

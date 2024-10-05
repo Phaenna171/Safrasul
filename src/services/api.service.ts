@@ -13,6 +13,17 @@ class ApiService {
             body: JSON.stringify(body)
         })).json()
     }
+
+    async postFormData(endpoint: string, body: any, isAuth?: boolean) {
+        return await (await fetch(`${url}/${endpoint}`, {
+            method: "POST",
+            headers: {
+                'Authorization': isAuth ? GetJwtCookie() : ''
+            },
+            body,
+        })).json()
+    }
+
     async put(endpoint: string, body: any, isAuth?: boolean) {
         return await (await fetch(`${url}/${endpoint}`, {
             method: "PUT",
@@ -23,6 +34,18 @@ class ApiService {
             body: JSON.stringify(body)
         })).json()
     }
+
+    async putFormData(endpoint: string, body: any, isAuth?: boolean) {
+        return await (await fetch(`${url}/${endpoint}`, {
+            method: "PUT",
+            headers: {
+                'Content-Type': 'multipart/form-data',
+                'Authorization': isAuth ? GetJwtCookie() : ''
+            },
+            body: new FormData(body)
+        })).json()
+    }
+
     async get(endpoint: string, isAuth?: boolean) {
         return await (await fetch(`${url}/${endpoint}`, {
             method: "GET",
@@ -32,6 +55,7 @@ class ApiService {
             },
         })).json()
     }
+
     async delete(endpoint: string, isAuth?: boolean) {
         return await (await fetch(`${url}/${endpoint}`, {
             method: "DELETE",
@@ -43,5 +67,5 @@ class ApiService {
     }
 }
 
-const   apiService = new ApiService()
+const apiService = new ApiService()
 export default apiService

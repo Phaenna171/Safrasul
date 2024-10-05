@@ -1,5 +1,5 @@
 export interface IActionResponse {
     error: boolean
-    message: string
+    message?: string
     data?:any
 }
