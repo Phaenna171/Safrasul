@@ -10,9 +10,9 @@ export default function Posts() {
   }, []);
 
   async function getPosts() {
-    const {data} = await (await fetch('https://graph.instagram.com/me/media?access_token=IGQWRNc3NQeHluYXBwS2FXREtDSWJXUkV4bmUwU01tRjJvZAUZA6OU5GWmdfTnMzMjdyN285YWZATR3V4UV94WGNNbzFCRW5zQVE3ZAFQ4R3dmTC10c0gyOG9DR0JmSEp1c1M4S2tUUWVHakEtdjZAiTmw5OHRnZA0QzdUkZD&fields=media_url,permalink,media_type'))
+    const { data } = await (await fetch(`https://graph.instagram.com/me/media?access_token=${process.env.NEXT_PUBLIC_INSTA_TOKEN}&fields=media_url,permalink,media_type`))
       .json()
-      setPosts(data.filter(el => el.media_type == 'IMAGE'))
+    setPosts(data.filter(el => el.media_type == 'IMAGE'))
   }
 
   return (
