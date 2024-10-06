@@ -39,10 +39,9 @@ class ApiService {
         return await (await fetch(`${url}/${endpoint}`, {
             method: "PUT",
             headers: {
-                'Content-Type': 'multipart/form-data',
                 'Authorization': isAuth ? GetJwtCookie() : ''
             },
-            body: new FormData(body)
+            body
         })).json()
     }
 

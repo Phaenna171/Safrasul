@@ -5,8 +5,8 @@ import apiService from "./api.service"
 class ProductService {
     async register(data: any): Promise<IActionResponse> {
         try {
-            await apiService.postFormData(EndpointEnum.PRODUCTS, data, true)
-            return { error: false, message: 'Acesse o seu e-mail para recuperar sua senha' }
+            const result = await apiService.postFormData(EndpointEnum.PRODUCTS, data, true)
+            return { error: false, data: result }
         } catch (error) {
             return { error: true, message: error.message }
         }
@@ -23,17 +23,17 @@ class ProductService {
 
     async getById(id: string): Promise<IActionResponse> {
         try {
-            await apiService.get(EndpointEnum.PRODUCTS + id)
-            return { error: false, message: 'Acesse o seu e-mail para recuperar sua senha' }
+            const result = await apiService.get(EndpointEnum.PRODUCTS + id)
+            return { error: false, data: result }
         } catch (error) {
             return { error: true, message: error.message }
         }
     }
 
-    async update(data: any): Promise<IActionResponse> {
+    async update(data: any, id:string): Promise<IActionResponse> {
         try {
-            await apiService.putFormData(EndpointEnum.PRODUCTS + data.id, data, true)
-            return { error: false, message: 'Acesse o seu e-mail para recuperar sua senha' }
+            const result = await apiService.putFormData(EndpointEnum.PRODUCTS + id, data, true)
+            return { error: false, data: result }
         } catch (error) {
             return { error: true, message: error.message }
         }
@@ -41,8 +41,8 @@ class ProductService {
 
     async delete(id: string): Promise<IActionResponse> {
         try {
-            await apiService.delete(EndpointEnum.PRODUCTS + id)
-            return { error: false, message: 'Acesse o seu e-mail para recuperar sua senha' }
+            const result = await apiService.delete(EndpointEnum.PRODUCTS + id, true)
+            return { error: false, data: result }
         } catch (error) {
             return { error: true, message: error.message }
         }

@@ -122,7 +122,7 @@ export default function AddProductModal({ isOpen, onClose }) {
     >
       <form onSubmit={handleSubmit} className="bg-white rounded-lg p-6 w-[700px] max-h-[700px] overflow-y-auto relative">
         {/* Close Button */}
-        <button onClick={onClose} className="absolute top-4 right-4 text-xl">
+        <button type="button" onClick={onClose} className="absolute top-4 right-4 text-xl">
           ✖
         </button>
 
