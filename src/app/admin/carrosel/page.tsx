@@ -61,7 +61,7 @@ export default function Page() {
                     {banners?.map((banner, index) => (
                         <div key={index} className="w-[209px] flex-col items-center gap-2 inline-flex relative ">
                             <Image
-                                src={banner.image && banner?.image[0]}
+                                src={banner.image}
                                 alt={banner.title}
                                 width={250}
                                 height={200}

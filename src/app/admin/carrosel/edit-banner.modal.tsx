@@ -36,7 +36,6 @@ export default function EditBannerModal({ isOpen, onClose, banner }) {
     formData.append('link', e.currentTarget.link.value);
 
     if (!images.src.includes('firebase')) formData.append(`file`, images.file);
-    else formData.append(`oldPhotos`, images.src)
 
     const result = await bannerService.update(formData, banner.id);
     if (result.error) alert(result.message);
@@ -52,7 +51,7 @@ export default function EditBannerModal({ isOpen, onClose, banner }) {
       setTitle(banner.title || "");
       setDescription(banner.description || "");
       setLink(banner.link || "");
-      banner.carouselPhotos && setImages(banner.carouselPhotos?.map((el, index) => ({ name: `Banner`, src: el })))
+      setImages({ name: `Banner`, src: banner.image })
     }
   }, [banner]);
 
@@ -92,8 +91,8 @@ export default function EditBannerModal({ isOpen, onClose, banner }) {
             ? <img src={images.src} alt='imagem' className="h-12 w-12 object-cover rounded-md" />
             : <div className="h-12 w-12 object-cover rounded-md bg-slate-600" />
           }
-          <label className='border border-green-600 rounded w-1/2 p-2 cursor-pointer' htmlFor={`banner`}>{images.name || 'Selecionar foto'}</label>
-          <input id={`banner`} hidden
+          <label className='border border-green-600 rounded w-1/2 p-2 cursor-pointer' htmlFor={`banner-edit`}>{images.name || 'Selecionar foto'}</label>
+          <input id={`banner-edit`} hidden
             accept="image/*"
             type="file" placeholder="Item" className="w-1/2 p-2 border border-green-600 rounded"
             onChange={(e) => handleImageChange(e)}
@@ -103,7 +102,7 @@ export default function EditBannerModal({ isOpen, onClose, banner }) {
 
         {/* Short Description */}
         <label className="block mb-2">Link da imagem:</label>
-        <input name="subtitle" value={link} onChange={e => setLink(e.target.value)}
+        <input name="link" value={link} onChange={e => setLink(e.target.value)}
           required type="text" className="w-full mb-4 p-2 border border-green-600 rounded" placeholder="Aqui vai ficar todo o texto auxiliar."
         />
 
