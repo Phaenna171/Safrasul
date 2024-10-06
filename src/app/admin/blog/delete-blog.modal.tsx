@@ -6,7 +6,7 @@ export default function DeleteBannerModal({ isOpen, onClose, onDelete }) {
     >
       <div className="bg-white rounded-lg p-6 w-[400px] relative">
 
-        <h2 className="text-2xl font-bold mb-4">Tem certeza que deseja excluir o banner selecionado?</h2>
+        <h2 className="text-2xl font-bold mb-4">Tem certeza que deseja excluir a publicação selecionada?</h2>
 
         {/* Confirm and Cancel Buttons */}
         <div className="flex justify-between gap-4 mt-10">

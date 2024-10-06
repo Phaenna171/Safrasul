@@ -1,16 +1,13 @@
-import bannerService from "@/services/banner.service";
-import { useEffect, useState } from "react";
+import blogService from "@/services/blog.service";
+import { useState } from "react";
+import ReactQuill from 'react-quill';
 
-export default function EditBannerModal({ isOpen, onClose, banner }) {
+export default function AddBlogModal({ isOpen, onClose }) {
   const [images, setImages] = useState<{ name: string, src: string, file?: File }>({ name: "", src: "" });
-
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [link, setLink] = useState("");
+  const [description, setDescription] = useState('');
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
-    console.log(file)
     if (file) {
       const reader = new FileReader();
       reader.onloadend = () => {
@@ -28,34 +25,22 @@ export default function EditBannerModal({ isOpen, onClose, banner }) {
     e.preventDefault();
 
     if (!images.src) return alert('Insira uma foto');
+    if (!description) return alert('Insira uma descrição');
 
     const formData = new FormData();
 
     formData.append('title', e.currentTarget.title.value);
-    formData.append('description', e.currentTarget.description.value);
-    formData.append('link', e.currentTarget.link.value);
+    formData.append(`file`, images.file);
+    formData.append('description', description);
 
-    if (!images.src.includes('firebase')) formData.append(`file`, images.file);
-
-    const result = await bannerService.update(formData, banner.id);
+    const result = await blogService.register(formData);
     if (result.error) alert(result.message);
     else {
       onClose()
-      alert('Banner atualizado')
+      alert('Blog adicionado')
       location.reload()
     }
   }
-
-  useEffect(() => {
-    if (banner) {
-      setTitle(banner.title || "");
-      setDescription(banner.description || "");
-      setLink(banner.link || "");
-      setImages({ name: `Banner`, src: banner.image })
-    }
-  }, [banner]);
-
-  if (!banner) return null
 
   return (
     <div
@@ -68,22 +53,18 @@ export default function EditBannerModal({ isOpen, onClose, banner }) {
           ✖
         </button>
 
-        <h2 className="text-2xl font-bold mb-4">Editar Banner</h2>
+        <h2 className="text-2xl font-bold mb-4">Adicionar Novo Post Blog</h2>
 
         {/* Product Name */}
-        <label className="block mb-2">Título::</label>
-        <input value={title} onChange={e => setTitle(e.target.value)} name="title" required type="text" className="w-full mb-4 p-2 border border-green-600 rounded"
+        <label className="block mb-2">Título:</label>
+        <input name="title" required type="text" className="w-full mb-4 p-2 border border-green-600 rounded"
           placeholder="Qualidade que enriquece o agro"
         />
 
+
         {/* Long Description */}
-        <label className="block mb-2">Texto auxiliar:</label>
-        <textarea
-          value={description} onChange={e => setDescription(e.target.value)}
-          name="description" required
-          className="w-full mb-4 p-2 border border-green-600 rounded h-24"
-          placeholder="Escreva aqui a descrição completa do produto."
-        ></textarea>
+        <label className="block mb-2">Descrição:</label>
+        <ReactQuill className="text-black" theme="snow" value={description} onChange={(value) => setDescription(value)} />
 
         <label className="block mb-2">Imagem:</label>
         <div className="flex mb-2 gap-4 items-center">
@@ -91,20 +72,13 @@ export default function EditBannerModal({ isOpen, onClose, banner }) {
             ? <img src={images.src} alt='imagem' className="h-12 w-12 object-cover rounded-md" />
             : <div className="h-12 w-12 object-cover rounded-md bg-slate-600" />
           }
-          <label className='border border-green-600 rounded w-1/2 p-2 cursor-pointer' htmlFor={`banner-edit`}>{images.name || 'Selecionar foto'}</label>
-          <input id={`banner-edit`} hidden
+          <label className='border border-green-600 rounded w-1/2 p-2 cursor-pointer' htmlFor={`banner`}>{images.name || 'Selecionar foto'}</label>
+          <input id={`banner`} hidden
             accept="image/*"
             type="file" placeholder="Item" className="w-1/2 p-2 border border-green-600 rounded"
             onChange={(e) => handleImageChange(e)}
           />
         </div>
-
-
-        {/* Short Description */}
-        <label className="block mb-2">Link da imagem:</label>
-        <input name="link" value={link} onChange={e => setLink(e.target.value)}
-          required type="text" className="w-full mb-4 p-2 border border-green-600 rounded" placeholder="Aqui vai ficar todo o texto auxiliar."
-        />
 
         {/* Save and Close Buttons */}
         <div className="flex justify-end gap-4">
