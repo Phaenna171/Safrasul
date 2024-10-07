@@ -14,7 +14,7 @@ export default function Posts() {
       .json()
     setPosts(data.filter(el => el.media_type == 'IMAGE'))
   }
-
+  
   return (
     <>
       <div className="px-10 pt-0 pb-12 md:px-40 md:py-24">
