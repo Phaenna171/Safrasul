@@ -187,3 +187,21 @@
   display: none;
 }
 
+.table-scroll-mix::-webkit-scrollbar {
+  height: 5px;
+}
+
+.table-scroll-mix::-webkit-scrollbar-thumb {
+  background-color: #4C9162; /* Cor do polegar */
+  border-radius: 10px;
+}
+
+.table-scroll-mix::-webkit-scrollbar-track {
+  background-color: #E7F1E9; /* Cor do fundo */
+}
+
+/* Ocultar barra de rolagem padrão dentro de um container específico */
+.table-scroll-mix.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+

@@ -25,7 +25,7 @@ export default function UtilizacaoEIndicacao() {
                 className="object-contain h-[60px] md:h-[80px] w-auto"
               />
             ))}
-          </div>
+        </div>
         </div>
 
         {/* INDICAÇÃO */}

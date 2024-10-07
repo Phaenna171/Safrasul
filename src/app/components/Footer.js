@@ -24,7 +24,7 @@ const Footer = forwardRef((props, ref) => {
                 <p className="text-white text-center md:text-start font-openSans text-sm font-light">CEP: 79018 800</p>
                 <h2 className="text-white text-center md:text-start font-openSans text-sm font-medium mt-4">Telefones:</h2>
                 <p className="text-white text-center md:text-start font-openSans text-sm font-light">0800 540 0070</p>
-                <p className="text-white text-center md:text-start font-openSans text-sm font-light">(67) 3358-5400</p>
+                
               </div>
 
               <div className=" mb-4 md:mb-0 w-full md:w-auto">

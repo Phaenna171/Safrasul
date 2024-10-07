@@ -1034,9 +1034,9 @@ export const ProductProvider = ({ children }) => {
             "A BRS Quênia é uma cultivar híbrida de Panicum maximum, proveniente do programa de melhoramento genético da Embrapa., lançada em 2017.",
           ],
           vantagens: [
-           "A BRS Quênia é o uma cultivar produtiva e de excelente qualidade, de porte intermediário, com folhas macias e colmos tenros, alto perfilhamento e de fácil manejo.",
-           "É muito responsiva a adubação, e com boa tolerância ao frio, muito resistente a cigarrinha típica das pastagens Bipolaris maydis.",
-           "É indicada para gado de corte, leiteiro, ovinos, caprinos e equinos. Pode ser manejado em pastejo contínuo ou rotacionado.",
+            "A BRS Quênia é o uma cultivar produtiva e de excelente qualidade, de porte intermediário, com folhas macias e colmos tenros, alto perfilhamento e de fácil manejo.",
+            "É muito responsiva a adubação, e com boa tolerância ao frio, muito resistente a cigarrinha típica das pastagens Bipolaris maydis.",
+            "É indicada para gado de corte, leiteiro, ovinos, caprinos e equinos. Pode ser manejado em pastejo contínuo ou rotacionado.",
           ],
           obs: [
             "É exigente em fertilidade, tem baixa tolerância à seca e não tolera encharcamento do solo.",
@@ -1462,7 +1462,7 @@ export const ProductProvider = ({ children }) => {
       },
 
       // DADOS DA SEMENTE
-      intro:[
+      intro: [
         {
           img: '/imgs/products/LEGUMINOSAS/Crotalaria_Ochroleuca/leguminosa_crotala╠üria_Ochroleuca_.jpg',
           txt: "Produtividade e resultado que seu campo precisa!"
@@ -1484,7 +1484,7 @@ export const ProductProvider = ({ children }) => {
           txt: "Produtividade e resultado que seu campo precisa!"
         },
       ],
-      cabecalho:[
+      cabecalho: [
         {
           title: "Crotalária Ochroleuca",
           subtitle: "",
@@ -1511,7 +1511,7 @@ export const ProductProvider = ({ children }) => {
           description: "Cajanus cajan cv. BRS Mandarim",
         },
       ],
-      slides:[
+      slides: [
         [
           '/imgs/products/LEGUMINOSAS/Crotalaria_Ochroleuca/leguminosa_crotala╠üria_Ochroleuca_.jpg',
           '/imgs/products/LEGUMINOSAS/Crotalaria_Ochroleuca/leguminosa_crotala╠üria_Ochroleuca_.jpg',
@@ -1542,7 +1542,7 @@ export const ProductProvider = ({ children }) => {
 
         ],
       ],
-      textos:[
+      textos: [
         {
           introducao: [
             "É uma leguminosa anual de primavera-verão de ciclo relativamente longo. É agressiva e rústica, resistente às condições adversas de clima e solo por causa das raízes profundas que rompem as camadas adensadas do solo. É utilizada na sucessão da soja em áreas com infestação mista dos nematoides das galhas e das lesões radiculares, com destaque para o Pratylenchus brachyurus. Consorcia muito bem com o Milheto. Apresenta boa produção de biomassa e fixação de nitrogênio, sendo também recomendada para recuperação de solos degradados. Culturas/utilização: soja, milho, culturas perenes e cana-de-açúcar.",
@@ -1620,7 +1620,7 @@ export const ProductProvider = ({ children }) => {
           ],
         },
       ],
-      utilizacoes:[
+      utilizacoes: [
         [
           "/icons/icone_pastoreio.svg",
           "/icons/icone_fenacao.svg",
@@ -1647,7 +1647,7 @@ export const ProductProvider = ({ children }) => {
           "/icons/icone_palhada.svg",
         ],
       ],
-      indicacoes:[
+      indicacoes: [
         [
           "/icons/icone_gado_de_leite.svg",
           "/icons/icone_gado_de_corte.svg",
@@ -1669,7 +1669,7 @@ export const ProductProvider = ({ children }) => {
           "/icons/icone_gado_de_corte.svg",
         ],
       ],
-      infosTabelaNome:[
+      infosTabelaNome: [
         [
           "Hábito de crescimento",
           "Altura da Planta",
@@ -1761,7 +1761,7 @@ export const ProductProvider = ({ children }) => {
           "Inserção da espigueta na ráquis",
         ],
       ],
-      infosTabelaValor:[
+      infosTabelaValor: [
         [
           "Cepitoso",
           "Média de 53 cm",

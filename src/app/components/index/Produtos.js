@@ -29,7 +29,7 @@ export default function Produtos() {
             <div className="relative">
               <img src="/imgs/gramineas.png" className="w-full h-auto" />
               <h2 className="absolute inset-0 flex items-center justify-center text-white text-lg md:text-xl lg:text-2xl font-bold">
-                Gramíneas
+                Mix de Sementes
               </h2>
             </div>
           </div>

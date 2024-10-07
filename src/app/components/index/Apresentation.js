@@ -36,14 +36,7 @@ export default function Apresentation() {
                   </button>
                 </div>
 
-                {/* Cotacao WhatsApp */}
-                <div className="flex flex-col items-end justify-center md:col-start-3 md:row-start-3">
-                  <img
-                    src="./icons/cotacao-wpp.svg"
-                    className="w-auto h-10 md:h-12 lg:h-16"
-                    alt="Cotação WhatsApp"
-                  />
-                </div>
+                
 
                 {/* Scroll Down Icon */}
                 <div className="flex flex-col items-center justify-end md:col-start-2 md:row-start-3 pb-7 md:pb-6">
@@ -73,16 +66,7 @@ export default function Apresentation() {
                     FAÇA SUA COTAÇÃO
                   </button>
                 </div>
-
-                {/* Cotacao WhatsApp */}
-                <div className="flex flex-col items-end justify-center md:col-start-3 md:row-start-3">
-                  <img
-                    src="./icons/cotacao-wpp.svg"
-                    className="w-auto h-10 md:h-12 lg:h-16"
-                    alt="Cotação WhatsApp"
-                  />
-                </div>
-
+                
                 {/* Scroll Down Icon */}
                 <div className="flex flex-col items-center justify-end md:col-start-2 md:row-start-3 pb-7 md:pb-6">
                   <img
