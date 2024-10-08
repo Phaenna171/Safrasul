@@ -1,11 +1,23 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ProductContext } from "@/app/products/context/ProductContext";
 import Slider from "react-slick";
 import Image from "next/image";
+import productService from "@/services/product.service";
 
 export default function Cabecalho() {
 
   const {datas, goToNext, goToPrev, sliderRef, selectedSeed, selectedCategory} = useContext(ProductContext)
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    async function getData() {
+      const { data } = await productService.getAll()
+      setProducts(data)
+    }
+    getData()
+  }, [selectedSeed]);
+
 
   const settings = {
     dots: true,
@@ -31,9 +43,9 @@ export default function Cabecalho() {
           <div className="lg:pt-12">
             {/* TITULOS */}
             <div>
-              <h1 className="font-effra text-3xl text-center md:text-start md:text-4xl lg:text-5xl text-[#136736] leading-8">{datas[selectedCategory].cabecalho[selectedSeed].title}</h1>
-              <h2 className="font-openSans text-center md:text-start text-xl md:text-2xl text-[#639D77] font-bold pb-1">{datas[selectedCategory].cabecalho[selectedSeed].subtitle}</h2>
-              <p className="text-center md:text-start font-openSans text-sm text-[#354D4D]">{datas[selectedCategory].cabecalho[selectedSeed].description}</p>
+              <h1 className="font-effra text-3xl text-center md:text-start md:text-4xl lg:text-5xl text-[#136736] leading-8">{products.filter(el => el.category == selectedCategory)[selectedSeed]?.title}</h1>
+              <h2 className="font-openSans text-center md:text-start text-xl md:text-2xl text-[#639D77] font-bold pb-1">{products.filter(el => el.category == selectedCategory)[selectedSeed]?.subtitle}</h2>
+              <p className="text-center md:text-start font-openSans text-sm text-[#354D4D]">{products.filter(el => el.category == selectedCategory)[selectedSeed]?.description}</p>
             </div>
 
             {/* EMBALAGEM E SELOS */}

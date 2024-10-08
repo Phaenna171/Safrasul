@@ -12,7 +12,7 @@ export default function Posts() {
   async function getPosts() {
     const { data } = await (await fetch(`https://graph.instagram.com/me/media?access_token=${process.env.NEXT_PUBLIC_INSTA_TOKEN}&fields=media_url,permalink,media_type`))
       .json()
-    setPosts(data.filter(el => el.media_type == 'IMAGE'))
+    setPosts(data?.filter(el => el.media_type == 'IMAGE') || [])
   }
   
   return (

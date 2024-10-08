@@ -1,10 +1,21 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ProductContext } from "@/app/products/context/ProductContext";
+import productService from "@/services/product.service";
 
 export default function Textos() {
 
   const { datas, selectedSeed, selectedCategory } = useContext(ProductContext)
 
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    async function getData() {
+      const { data } = await productService.getAll()
+      setProducts(data)
+    }
+    getData()
+  }, [selectedSeed]);
+  
   return (
     <>
       {/* TEXTOS */}

@@ -1,23 +1,32 @@
-import { useState, useContext } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BlogContext } from "@/app/blog/context/BlogContext";
+import blogService from "@/services/blog.service";
 
 export default function TodasPostagens() {
   
-  const {publicacoesPosts} = useContext(BlogContext);
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    async function getData() {
+      const { data } = await blogService.getAll()
+      setPosts(data)
+    }
+    getData()
+  }, []);
+  
   const postagensPorPagina = 12;
   const [paginaAtual, setPaginaAtual] = useState(1);
 
   const indiceFinal = paginaAtual * postagensPorPagina;
   const indiceInicial = indiceFinal - postagensPorPagina;
-  const postagensExibidas = publicacoesPosts.slice(indiceInicial, indiceFinal);
+  const postagensExibidas = posts.slice(indiceInicial, indiceFinal);
 
   const mudarPagina = (novaPagina) => {
     setPaginaAtual(novaPagina);
   };
 
-  const totalPaginas = Math.ceil(publicacoesPosts.length / postagensPorPagina);
+  const totalPaginas = Math.ceil(posts.length / postagensPorPagina);
 
   return (
     <>
@@ -30,22 +39,22 @@ export default function TodasPostagens() {
           {postagensExibidas.map((post, index) => (
             <Link 
               key={index} 
-              href={`/posts/postsTodas/post${indiceInicial + index}`} // Corrige o índice global para a rota
+              href={`/posts/${post.id}`} // Corrige o índice global para a rota
               passHref
             >
               <div className="relative w-full h-[200px] sm:h-[250px] cursor-pointer">
                 <Image
-                  src={post.imgSrc}
-                  alt={post.titulo}
+                  src={post.image}
+                  alt={post.title}
                   layout="fill"
                   objectFit="cover"
                 />
                 <div className="absolute bottom-4 left-4 sm:bottom-8 sm:left-8">
                   <h2 className="font-openSans text-white font-bold text-xl sm:text-2xl pb-2 sm:pb-3">
-                    {post.titulo}
+                    {post.title}
                   </h2>
                   <p className="font-openSans text-white font-light text-xs">
-                    {post.data}
+                    {new Date(post.createdAt).toLocaleDateString('pt-BR')}
                   </p>
                 </div>
               </div>

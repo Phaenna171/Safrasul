@@ -1,5 +1,5 @@
 'use client'
-import { React, useRef ,useContext } from 'react';
+import { React, useRef, useContext } from 'react';
 import Header from "../Header";
 import ImageGrid from "./ImageGrid";
 import Description from './Description';
@@ -16,25 +16,20 @@ export default function MainProducts() {
 
   return (
     <>
-      <Header footerRef={footerRef}/>
+      <Header footerRef={footerRef} />
       {/* MENU */}
       <Menu />
       {/* Condicional: Exibe a grid ou a descrição da semente */}
       {selectedSeed === null ? (
         <div>
-          <ImageGrid
-            images={datas[selectedCategory].images}
-            titles={datas[selectedCategory].titles}
-            descriptions={datas[selectedCategory].descriptions}
-            onImageClick={handleSeedSelect} // Passa a função para o componente ImageGrid
-          />
+          <ImageGrid />
 
-          <Description/>
+          <Description />
         </div>
       ) : (
         <Semente />
       )}
-      <Footer ref={footerRef}/>
+      <Footer ref={footerRef} />
 
     </>
 

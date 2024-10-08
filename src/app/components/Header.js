@@ -39,7 +39,7 @@ export default function Header({ footerRef }) {
           className="w-full flex items-center justify-between"
         >
           <div className="flex flex-1">
-            <a href="#" className="p-2">
+            <a href="/" className="p-2">
               <span className="sr-only">Your Company</span>
               <img
                 alt="Logo"
