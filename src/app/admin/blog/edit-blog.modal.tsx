@@ -1,6 +1,7 @@
+'use client'
 import blogService from "@/services/blog.service";
 import { useEffect, useState } from "react";
-import ReactQuill from 'react-quill';
+const ReactQuill = typeof window === 'object' ? require('react-quill') : () => false;
 
 export default function EditBannerModal({ isOpen, onClose, blog }) {
   const [images, setImages] = useState<{ name: string, src: string, file?: File }>({ name: "", src: "" });

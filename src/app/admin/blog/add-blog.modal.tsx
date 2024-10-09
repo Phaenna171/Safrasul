@@ -1,6 +1,7 @@
+'use client'
 import blogService from "@/services/blog.service";
 import { useState } from "react";
-import ReactQuill from 'react-quill';
+const ReactQuill = typeof window === 'object' ? require('react-quill') : () => false;
 
 export default function AddBlogModal({ isOpen, onClose }) {
   const [images, setImages] = useState<{ name: string, src: string, file?: File }>({ name: "", src: "" });
@@ -41,6 +42,8 @@ export default function AddBlogModal({ isOpen, onClose }) {
       location.reload()
     }
   }
+
+  if (typeof window !== "undefined") return
 
   return (
     <div
