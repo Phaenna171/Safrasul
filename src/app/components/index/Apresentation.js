@@ -32,7 +32,7 @@ export default function Apresentation() {
     <>
       <div className="relative overflow-hidden">
         <Slider {...settings} ref={sliderRef}>
-          {banners?.map(el => <Link href={el?.link || ''} className="pb-10 relative h-[83vh]">
+          {banners?.map(el => <Link key={el?.id} href={el?.link || ''} className="pb-10 relative h-[83vh]">
             <Image width={300} height={300} unoptimized alt="" src={el.image} className="absolute -z-10 w-full h-full object-cover" />
             <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-4 pt-0 px-10">
               <div className="flex flex-col items-start justify-start md:col-start-1 md:row-start-2 md:col-span-2">
