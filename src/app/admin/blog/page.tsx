@@ -8,6 +8,8 @@ import blogService from "@/services/blog.service";
 import 'react-quill/dist/quill.snow.css';
 
 export default function Page() {
+    if(typeof window !== "undefined") return
+    
     const [isAddModalOpen, setAddModalOpen] = useState(false);
     const [isEditModalOpen, setEditModalOpen] = useState(false);
     const [isDeleteModalOpen, setDeleteModalOpen] = useState(false);

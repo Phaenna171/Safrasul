@@ -1,3 +1,3 @@
-export function SetJwtCookie(jwt:string) {
+export function SetJwtCookie(jwt: string) {
     return document.cookie = `auth-token=${jwt}`
 }
