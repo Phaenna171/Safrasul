@@ -27,7 +27,7 @@ export default function Intro() {
         <div className="row-start-3 row-span-1 w-[250px]">
           <h1 className="font-effra text-3xl  md:text-start md:text-4xl lg:text-5xl text-white leading-8">{products.filter(el => el.category == selectedCategory)[selectedSeed]?.title}</h1>
           <p className="font-openSans text-xl  font-light leading-5 text-white break-words whitespace-normal">
-            {products.filter(el => el.category == selectedCategory)[selectedSeed]?.subtitle}
+            Produtividade e resultado que seu campo precisa!
           </p>
           <button className="text-white mt-4 bg-[#F07A10] text-xs py-1 px-4 md:py-1 md:px-6 rounded-full">
             FAÇA SUA COTAÇÃO

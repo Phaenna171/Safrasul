@@ -44,8 +44,8 @@ export default function Cabecalho() {
             {/* TITULOS */}
             <div>
               <h1 className="font-effra text-3xl text-center md:text-start md:text-4xl lg:text-5xl text-[#136736] leading-8">{products.filter(el => el.category == selectedCategory)[selectedSeed]?.title}</h1>
-              <h2 className="font-openSans text-center md:text-start text-xl md:text-2xl text-[#639D77] font-bold pb-1">{products.filter(el => el.category == selectedCategory)[selectedSeed]?.subtitle}</h2>
-              <p className="text-center md:text-start font-openSans text-sm text-[#354D4D]">{products.filter(el => el.category == selectedCategory)[selectedSeed]?.description}</p>
+              {/* <h2 className="font-openSans text-center md:text-start text-xl md:text-2xl text-[#639D77] font-bold pb-1">{products.filter(el => el.category == selectedCategory)[selectedSeed]?.subtitle}</h2> */}
+              <p className="text-center md:text-start font-openSans text-sm text-[#354D4D]">{products.filter(el => el.category == selectedCategory)[selectedSeed]?.subtitle}</p>
             </div>
 
             {/* EMBALAGEM E SELOS */}

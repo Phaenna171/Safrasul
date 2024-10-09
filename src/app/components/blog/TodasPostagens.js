@@ -39,7 +39,7 @@ export default function TodasPostagens() {
           {postagensExibidas.map((post, index) => (
             <Link 
               key={index} 
-              href={`/posts/${post.id}`} // Corrige o índice global para a rota
+              href={`/blog/${post.id}`} // Corrige o índice global para a rota
               passHref
             >
               <div className="relative w-full h-[200px] sm:h-[250px] cursor-pointer">

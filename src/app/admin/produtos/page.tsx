@@ -42,7 +42,7 @@ export default function Page() {
         <main className="p-10 bg-white h-full">
             <h1 className="text-4xl font-bold mb-10">PRODUTOS</h1>
 
-            <div className="flex gap-6 justify-between flex-wrap">
+            <div className="flex gap-6 justify-between md:flex-nowrap flex-wrap">
                 <div className="relative flex flex-col gap-4 h-fit">
                     <div onClick={() => setAddModalOpen(true)} className="cursor-pointer flex justify-center items-center relative md:w-[209px] w-full md:h-[175px] h-full z-0 top-0 left-0 rounded-lg overflow-hidden ">
                         <Image unoptimized width={300} height={300} alt="Card produtos" className="w-full h-full object-cover" src="/imgs/admin-produtos.png" />
@@ -55,7 +55,7 @@ export default function Page() {
                     </button>
                 </div>
 
-                <div className="flex flex-wrap md:gap-6 gap-14">
+                <div className="flex flex-wrap md:gap-6 gap-14 justify-end">
                     {products.length == 0 && <p className="text-red-600">Nenhum produto adicionado</p>}
 
                     {products?.map((product, index) => (

@@ -37,7 +37,7 @@ export default function IntroBlog() {
         <div className="grid grid-cols-1 xl:grid-cols-5 gap-4 md:gap-8">
 
           {/* Imagem Principal - Post principal clicável */}
-          <Link href={`/posts/${posts[0]?.id}`} passHref className="col-span-1 md:col-span-3 cursor-pointer">
+          <Link href={`/blog/${posts[0]?.id}`} passHref className="col-span-1 md:col-span-3 cursor-pointer">
             <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px]">
               <Image
                 src={posts[0]?.image}
@@ -59,7 +59,7 @@ export default function IntroBlog() {
 
           <div className="col-span-1 md:col-span-2 grid grid-rows-3 gap-y-6">
             {posts.slice(1, 4).map((post, index) => (
-              <Link href={`/posts/${post.id}`} passHref key={index} className="flex">
+              <Link href={`/blog/${post.id}`} passHref key={index} className="flex">
                 <div className="flex items-center justfy-center gap-4 cursor-pointer">
                   <div >
                     <Image

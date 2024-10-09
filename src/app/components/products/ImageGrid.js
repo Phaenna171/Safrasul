@@ -42,7 +42,7 @@ export default function ImageGrid() {
               {product.title}
             </h1>
             <p className="text-white absolute font-openSans font-light text-sm sm:text-base sm:font-medium top-10 sm:top-16 left-2 sm:left-4">
-              {product.description}
+              {product.subtitle}
             </p>
           </div>
         ))}

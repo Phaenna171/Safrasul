@@ -39,7 +39,7 @@ export default function Reponsabilidade() {
           {postagensExibidas.map((post, index) => (
             <Link
               key={index}
-              href={`/posts/${post.id}`} 
+              href={`/blog/${post.id}`} 
               passHref
             >
               <div className="relative w-full h-[200px] sm:h-[250px] cursor-pointer">
