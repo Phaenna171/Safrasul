@@ -17,7 +17,7 @@ export default function MixSementesCobertura() {
         <h1 className="text-[#EC732E] text-4xl font-openSans font-bold text-center pb-16">Mix de Sementes de Culturas de Cobertura</h1>
         <div className="grid grid-cols-4 gap-x-8 md:gap-x-0">
           <div className="flex flex-col justify-start items-center pb-4 md:pb-16 cursor-pointer hover:opacity-80"
-            onClick={() => handleSelectedMix(1)}
+            onClick={() => handleSelectedMix("palha")}
           >
             <Image
               src="/imgs/mix-palha.png"
@@ -32,7 +32,7 @@ export default function MixSementesCobertura() {
           </div>
 
           <div className="flex flex-col justify-start items-center pb-4 md:pb-16 cursor-pointer hover:opacity-50"
-            onClick={() => handleSelectedMix(1)}
+            onClick={() => handleSelectedMix("integra")}
           >
             <Image
               src="/imgs/mix-integra.png"
@@ -47,7 +47,7 @@ export default function MixSementesCobertura() {
           </div>
 
           <div className="flex flex-col justify-start items-center pb-4 md:pb-16 cursor-pointer hover:opacity-50"
-            onClick={() => handleSelectedMix(1)}
+            onClick={() => handleSelectedMix("meuSolo")}
           >
             <Image
               src="/imgs/mix-meu-solo.png"
@@ -62,7 +62,7 @@ export default function MixSementesCobertura() {
           </div>
 
           <div className="flex flex-col justify-start items-center pb-4 md:pb-16 cursor-pointer hover:opacity-50"
-            onClick={() => handleSelectedMix(1)}
+            onClick={() => handleSelectedMix("fast")}
           >
             <Image
               src="/imgs/mix-fast.png"
@@ -77,7 +77,7 @@ export default function MixSementesCobertura() {
           </div>
 
           <div className="flex flex-col justify-start items-center pb-4 md:pb-16 cursor-pointer hover:opacity-50"
-            onClick={() => handleSelectedMix(1)}
+            onClick={() => handleSelectedMix("milhosr")}
           >
             <Image
               src="/imgs/mix-consorcio-sr.png"
@@ -92,7 +92,7 @@ export default function MixSementesCobertura() {
           </div>
 
           <div className="flex flex-col justify-start items-center pb-4 md:pb-16 cursor-pointer hover:opacity-50"
-            onClick={() => handleSelectedMix(1)}
+            onClick={() => handleSelectedMix("milhosp")}
           >
             <Image
               src="/imgs/mix-consorcio-sp.png"
@@ -102,12 +102,12 @@ export default function MixSementesCobertura() {
               className=""
             />
             <p className="text-[#818181] text-center md:text-2xl font-openSans font-semibold pt-2">
-              Mix Consórcio<br />Milho SR 14
+              Mix Consórcio<br />Milho SP 14
             </p>
           </div>
 
           <div className="flex flex-col justify-start items-center pb-4 md:pb-16 cursor-pointer hover:opacity-50"
-            onClick={() => handleSelectedMix(1)}
+            onClick={() => handleSelectedMix("cana")}
           >
             <Image
               src="/imgs/mix-cana.png"
@@ -122,7 +122,7 @@ export default function MixSementesCobertura() {
           </div>
 
           <div className="flex flex-col justify-start items-center pb-4 md:pb-16 cursor-pointer hover:opacity-50"
-            onClick={() => handleSelectedMix(1)}
+            onClick={() => handleSelectedMix("cafe")}
           >
             <Image
               src="/imgs/mix-café.png"
@@ -137,7 +137,7 @@ export default function MixSementesCobertura() {
           </div>
 
           <div className="flex flex-col justify-start items-center pb-4 md:pb-16 cursor-pointer hover:opacity-50"
-            onClick={() => handleSelectedMix(1)}
+            onClick={() => handleSelectedMix("winter")}
           >
             <Image
               src="/imgs/mix-winter.png"
