@@ -1,4 +1,4 @@
-import { createContext, useState, useRef } from 'react';
+import { createContext, useState, useRef, useEffect } from 'react';
 export const ProductContext = createContext();
 
 export const ProductProvider = ({ children }) => {
@@ -1866,6 +1866,7 @@ export const ProductProvider = ({ children }) => {
     setSelectedCategory(category);
     setSelectedSeed(null); // Resetar semente selecionada ao trocar categoria
   };
+
 
 
   // PASSAR OS SLIDES COM AS SETAS

@@ -9,9 +9,10 @@ export default function ScrollMix() {
 
   return (
     <>
+    
       <div className="py-4 bg-white flex gap-x-12 md:gap-x-36 items-end px-4 md:px-40 overflow-x-auto table-scroll-mix">
         {Object.values(datas[selectedMenu].menu).map((items, index) => (
-          <div key={index} className="shrink-0 flex flex-col  items-center">
+          <div key={index} className="shrink-0 flex flex-col items-center">
             <Image
               src={items.url}
               alt="Semente"

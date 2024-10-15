@@ -28,10 +28,6 @@ export const MixProvider = ({ children }) => {
           url:"/imgs/gramineas-milheto.png",
           nome:"Milheto BRS 1501",
         },
-        milheto2:{
-          url:"/imgs/gramineas-milheto.png",
-          nome:"Milheto ADR 300",
-        },
         coracana:{
           url:"/imgs/gramineas-milheto.png",
           nome:"Capim Coracana",
@@ -40,26 +36,46 @@ export const MixProvider = ({ children }) => {
           url:"/imgs/gramineas-milheto.png",
           nome:"Sorgo BRS Ponta Negra",
         },
+        outras:{
+          url:"/imgs/gramineas-milheto.png",
+          nome:"Outras forrageiras",
+        },
       },
       
     },
     leguminosas:{
       menu:{
-        aveiabranca:{
+        ervilhaca:{
           url:"/imgs/gramineas-aveia-branca.png",
-          nome:"Aveia Branca",
+          nome:"Ervilhaca comum",
         },
-        aveiapreta:{
+        ochro:{
           url:"/imgs/gramineas-aveia-preta.png",
-          nome:"Aveia Preta",
+          nome:"Crotalária ochroleuca",
         },
-        centeio:{
+        spec:{
           url:"/imgs/gramineas-centeio.png",
-          nome:"Centeio",
+          nome:"Crotalária spcetábilis",
         },
-        milheto:{
+        guandu:{
           url:"/imgs/gramineas-milheto.png",
-          nome:"Milheto",
+          nome:"Guando forrageiro",
+        },
+        juncea:{
+          url:"/imgs/gramineas-aveia-branca.png",
+          nome:"Crotalária juncea",
+        },
+        ervilha:{
+          url:"/imgs/gramineas-aveia-preta.png",
+          nome:"Ervilha forrageira",
+        },
+        feijao:{
+          url:"/imgs/gramineas-centeio.png",
+          nome:"Feijão mungo",
+        },
+        estilosantes:{
+          url:"/imgs/gramineas-milheto.png",
+          nome:"Estilosantes Campo Grande",
         },
       },
     },
@@ -67,19 +83,7 @@ export const MixProvider = ({ children }) => {
       menu:{
         aveiabranca:{
           url:"/imgs/gramineas-aveia-branca.png",
-          nome:"Aveia Branca",
-        },
-        aveiapreta:{
-          url:"/imgs/gramineas-aveia-preta.png",
-          nome:"Aveia Preta",
-        },
-        centeio:{
-          url:"/imgs/gramineas-centeio.png",
-          nome:"Centeio",
-        },
-        milheto:{
-          url:"/imgs/gramineas-milheto.png",
-          nome:"Milheto",
+          nome:"Girassol",
         },
       },
     },
@@ -87,19 +91,7 @@ export const MixProvider = ({ children }) => {
       menu:{
         aveiabranca:{
           url:"/imgs/gramineas-aveia-branca.png",
-          nome:"Aveia Branca",
-        },
-        aveiapreta:{
-          url:"/imgs/gramineas-aveia-preta.png",
-          nome:"Aveia Preta",
-        },
-        centeio:{
-          url:"/imgs/gramineas-centeio.png",
-          nome:"Centeio",
-        },
-        milheto:{
-          url:"/imgs/gramineas-milheto.png",
-          nome:"Milheto",
+          nome:"Trigo mourisco",
         },
       },
     },
@@ -107,19 +99,15 @@ export const MixProvider = ({ children }) => {
       menu:{
         aveiabranca:{
           url:"/imgs/gramineas-aveia-branca.png",
-          nome:"Aveia Branca",
+          nome:"Nabo forrageiro",
         },
         aveiapreta:{
           url:"/imgs/gramineas-aveia-preta.png",
-          nome:"Aveia Preta",
+          nome:"Nabo pé de pato",
         },
         centeio:{
           url:"/imgs/gramineas-centeio.png",
-          nome:"Centeio",
-        },
-        milheto:{
-          url:"/imgs/gramineas-milheto.png",
-          nome:"Milheto",
+          nome:"Crambe",
         },
       },
     },
@@ -132,126 +120,165 @@ export const MixProvider = ({ children }) => {
       titulo: "Mix Palha",
       lista: [
         "Crotalária Ochroleuca",
-        "Guando Forrageiro",
+        "Guandu Forrageiro",
         "Brachiaria Ruziziensis",
         "Brachiaria Brizantha Piatã",
         "Milheto BRS 1501"
       ],
-      recomendacao: "Recomendação - 20 KG/Ha",
+      recomendacao: "Recomendação - 20 kg/Ha",
       epoca: "Out - Mar",
       manejo: "80 a 100 dias",
+      lista2: [
+        "N",
+        "K",
+      ]
     },
     integra:{
       img: "/imgs/mix-integra.png",
       titulo: "Mix Integra",
       lista: [
-        "Crotalária Ochroleuca",
-        "Guando Forrageiro",
+        "Guandu Forrageiro",
         "Brachiaria Ruziziensis",
-        "Brachiaria Brizantha Piatã",
-        "Milheto BRS 1501"
+        "Crambe",
+        "Trigo Mourisco",
       ],
-      recomendacao: "Recomendação - 20 KG/Ha",
+      recomendacao: "Recomendação - 25kg/há",
       epoca: "Out - Mar",
-      manejo: "80 a 100 dias",
+      manejo: "70 a 80 dias",
+      lista2: [
+        "N",
+        "P"
+      ]
     },
     meuSolo:{
       img: "/imgs/mix-meu-solo.png",
       titulo: "Mix Meu Solo",
       lista: [
-        "Crotalária Ochroleuca",
-        "Guando Forrageiro",
-        "Brachiaria Ruziziensis",
-        "Brachiaria Brizantha Piatã",
-        "Milheto BRS 1501"
+        "Crotalária Spectábilis",
+        "Milheto ADR 300",
       ],
-      recomendacao: "Recomendação - 20 KG/Ha",
-      epoca: "Out - Mar",
-      manejo: "80 a 100 dias",
+      recomendacao: "Recomendação - 20 kg/Ha",
+      epoca: "Set - Mar",
+      manejo: "70 a 90 dias",
+      lista2: [
+        "N",
+        "K",
+      ]
     },
     fast:{
       img: "/imgs/mix-fast.png",
       titulo: "Mix Fast Plants",
       lista: [
         "Crotalária Ochroleuca",
-        "Guando Forrageiro",
-        "Brachiaria Ruziziensis",
-        "Brachiaria Brizantha Piatã",
-        "Milheto BRS 1501"
+        "Milheto BRS 1501",
+        "Nabo Forrageiro",
+        "Crambe",
+        "Trigo Mourisco",
       ],
-      recomendacao: "Recomendação - 20 KG/Ha",
-      epoca: "Out - Mar",
-      manejo: "80 a 100 dias",
+      recomendacao: "Recomendação - 25 kg/há",
+      epoca: "Fev - Abr",
+      manejo: "50 a 70 dias",
+      lista2: [
+        "K",
+        "N",
+        "P"
+      ]
     },
     milhosr:{
       img: "/imgs/mix-consorcio-sr.png",
-      titulo: "Mix Consórcio Milho SR 14",
+      titulo: "Mix Milho Semente SR 14",
       lista: [
-        "Crotalária Ochroleuca",
-        "Guando Forrageiro",
+        "Crotalária Spectábilis",
         "Brachiaria Ruziziensis",
-        "Brachiaria Brizantha Piatã",
-        "Milheto BRS 1501"
       ],
-      recomendacao: "Recomendação - 20 KG/Ha",
-      epoca: "Out - Mar",
+      recomendacao: "Recomendação - 14kg/há",
+      epoca: "Set - Mar",
       manejo: "80 a 100 dias",
+      lista2: [
+        "N",
+      ]
     },
     milhosp:{
       img: "/imgs/mix-consorcio-sp.png",
-      titulo: "Mix Consórcio Milho SP 14",
+      titulo: "Mix Milho Sementes SR 14",
       lista: [
-        "Crotalária Ochroleuca",
-        "Guando Forrageiro",
-        "Brachiaria Ruziziensis",
-        "Brachiaria Brizantha Piatã",
-        "Milheto BRS 1501"
+        "Crotalária Spectábilis",
+        "Braquiaria Brizantha Piatã",
       ],
-      recomendacao: "Recomendação - 20 KG/Ha",
-      epoca: "Out - Mar",
+      recomendacao: "Recomendação - 14kg/há",
+      epoca: "Set - Mar",
       manejo: "80 a 100 dias",
+      lista2: [
+        "N",
+      ]
     },
     cana:{
       img: "/imgs/mix-cana.png",
       titulo: "Mix Cana",
       lista: [
         "Crotalária Ochroleuca",
+        "Crotalária Spectábilis",
+        "Crotalária Juncea",
         "Guando Forrageiro",
-        "Brachiaria Ruziziensis",
-        "Brachiaria Brizantha Piatã",
-        "Milheto BRS 1501"
+        "Girassol",
+        "Nabo Forrageiro",
+        "Crambe",
+        "Trigo Mourisco",
       ],
-      recomendacao: "Recomendação - 20 KG/Ha",
-      epoca: "Out - Mar",
+      recomendacao: "Recomendação - 30 kg/há",
+      epoca: "Fev - Abr",
       manejo: "80 a 100 dias",
+      lista2: [
+        "K",
+        "Ca",
+        "B",
+        "N",
+        "P"
+      ]
     },
     cafe:{
       img: "/imgs/mix-café.png",
       titulo: "Mix Café",
       lista: [
         "Crotalária Ochroleuca",
+        "Crotalária Spectábilis",
         "Guando Forrageiro",
         "Brachiaria Ruziziensis",
-        "Brachiaria Brizantha Piatã",
-        "Milheto BRS 1501"
+        "Milheto BRS 1501",
+        "Nabo Forrageiro",
+        "Crambe",
+        "Trigo Mourisco",
       ],
-      recomendacao: "Recomendação - 20 KG/Ha",
-      epoca: "Out - Mar",
+      recomendacao: "Recomendação - 14 kg/há",
+      epoca: "Fev - Abr",
       manejo: "80 a 100 dias",
+      lista2: [
+        "K",
+        "Ca",
+        "B",
+        "N",
+        "P"
+      ]
     },
     winter:{
       img: "/imgs/mix-winter.png",
       titulo: "Mix Winter",
       lista: [
-        "Crotalária Ochroleuca",
-        "Guando Forrageiro",
-        "Brachiaria Ruziziensis",
-        "Brachiaria Brizantha Piatã",
-        "Milheto BRS 1501"
+        "Ervilhaca",
+        "Aveia Preta",
+        "Aveia Ucraniana",
+        "Centeio",
+        "Nabo Forrageiro",
+        "Crambe",
+        "Trigo Mourisco",
       ],
-      recomendacao: "Recomendação - 20 KG/Ha",
-      epoca: "Out - Mar",
+      recomendacao: "Recomendação - 50kg/há",
+      epoca: "Fev - Abr",
       manejo: "80 a 100 dias",
+      lista2: [
+        "N",
+        "P"
+      ]
     }
   }
   

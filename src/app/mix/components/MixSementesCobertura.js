@@ -87,7 +87,7 @@ export default function MixSementesCobertura() {
               className=""
             />
             <p className="text-[#818181] text-center md:text-2xl font-openSans font-semibold pt-2">
-              Mix Consórcio<br />Milho SR 14
+            Mix Milho<br />Semente SR 14
             </p>
           </div>
 
@@ -102,7 +102,7 @@ export default function MixSementesCobertura() {
               className=""
             />
             <p className="text-[#818181] text-center md:text-2xl font-openSans font-semibold pt-2">
-              Mix Consórcio<br />Milho SP 14
+              Mix Milho<br />Semente SR 14
             </p>
           </div>
 

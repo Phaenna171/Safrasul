@@ -7,12 +7,25 @@ import { MixContext } from "../context/MixContext";
 
 export default function Especificacoes() {
 
-  const { selectedMix, dataCobertura } = useContext(MixContext)
+  const { setSelectedMix, selectedMix, dataCobertura } = useContext(MixContext)
+
+  const handleSelectedMix = (value) => {
+    setSelectedMix(value)
+  }
 
   return (
     <>
       <div className="relative px-4 md:px-52 py-20">
-        <div className="absolute inset-0 h-[35%] md:h-[45%] bg-[#F2F2F2] z-0"></div>
+        <div className="absolute inset-0 h-[35%] md:h-[45%] bg-[#F2F2F2] z-0 ">
+          <Image
+            src="/imgs/arrow-left.svg"
+            alt="Voltar"
+            width={40}
+            height={40}
+            className="mt-8 ml-32 cursor-pointer hover:opacity-50"
+            onClick={() => { handleSelectedMix(null) }}
+          />
+        </div>
         <div className="relative z-10 flex gap-x-20 pb-2 md:pb-0 md:gap-x-16">
           <Image
             src={dataCobertura[selectedMix].img}
@@ -55,14 +68,31 @@ export default function Especificacoes() {
 
 
         <div className="relative z-10 flex gap-x-4">
-          <div className="text-center w-10 h-10 rounded-full bg-[#08663B]">
-            <p className="pt-2 text-white">N</p>
-          </div>
-          <div className="text-center w-10 h-10 rounded-full bg-[#EF1D20]">
-            <p className="pt-2 text-white">K</p>
-          </div>
+          {
+            dataCobertura[selectedMix].lista2.map((item, index) => (
+              <div key={index} className={`text-center w-10 h-10 rounded-full 
+                ${item === "K" 
+                  ? "bg-[#EF1D20]" 
+                  : item === "N" 
+                  ? "bg-[#00642B]" 
+                  : item === "Ca"
+                  ? "bg-[#F3A044]"
+                  : item === "B"
+                  ? "bg-[#2BB4EF]"
+                  : item === "P"
+                  ? "bg-[#EFD82B]"
+                  : ""
+
+                }`}>
+            
+                <p className="pt-2 text-white">{item}</p>
+              </div>
+            ))
+          }
         </div>
       </div>
     </>
   )
 }
+
+
