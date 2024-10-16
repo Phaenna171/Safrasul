@@ -6,7 +6,7 @@ export default function IntroducaoAbout() {
       <div className="w-full flex flex-col justify-center items-center">
         <div className="relative w-full h-[300px] md:h-[500px] lg:h-[600px]">
           <Image
-            src="/imgs/about-introducao.png"
+            src="/imgs/foto.webp"
             alt="Imagem Quem Somos"
             layout="fill"
             objectFit="cover"

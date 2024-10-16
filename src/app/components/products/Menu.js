@@ -23,13 +23,13 @@ export default function Menu() {
           <li
             key={category}
             onClick={() => handleCategoryChange(category)}
-            className={`text-sm sm:text-base cursor-pointer font-openSans ${selectedCategory === category ? 'text-white' : 'text-[#F9D55B]'}`}
+            className={`text-sm sm:text-base cursor-pointer font-openSans ${selectedCategory === category ? 'text-white' : 'text-black'}`}
           >
             {category}
           </li>
         ))}
         <li>
-          <Link href="/mix" className="text-sm sm:text-base cursor-pointer font-openSans text-[#F9D55B]">
+          <Link href="/mix" className="text-sm sm:text-base cursor-pointer font-openSans text-black[#F9D55B]">
             Mix de Sementes
           </Link>
         </li>

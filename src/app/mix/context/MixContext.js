@@ -29,11 +29,11 @@ export const MixProvider = ({ children }) => {
           nome:"Milheto BRS 1501",
         },
         coracana:{
-          url:"/imgs/gramineas-milheto.png",
+          url:"/imgs/coracana.png",
           nome:"Capim Coracana",
         },
         sorgo:{
-          url:"/imgs/gramineas-milheto.png",
+          url:"/imgs/sorgo.png",
           nome:"Sorgo BRS Ponta Negra",
         },
         outras:{
@@ -46,31 +46,31 @@ export const MixProvider = ({ children }) => {
     leguminosas:{
       menu:{
         ervilhaca:{
-          url:"/imgs/gramineas-aveia-branca.png",
+          url:"/imgs/ervilhaca-comum.png",
           nome:"Ervilhaca comum",
         },
         ochro:{
-          url:"/imgs/gramineas-aveia-preta.png",
-          nome:"Crotalária ochroleuca",
+          url:"/imgs/ochroleuca.png",
+          nome:"Crotalária Ochroleuca",
         },
         spec:{
-          url:"/imgs/gramineas-centeio.png",
-          nome:"Crotalária spcetábilis",
+          url:"/imgs/spectabilis.webp",
+          nome:"Crotalária Spectabilis",
         },
         guandu:{
-          url:"/imgs/gramineas-milheto.png",
-          nome:"Guando forrageiro",
+          url:"/imgs/guandu-forrageiro.png",
+          nome:"Guandú forrageiro",
         },
         juncea:{
-          url:"/imgs/gramineas-aveia-branca.png",
+          url:"/imgs/juncea.png",
           nome:"Crotalária juncea",
         },
         ervilha:{
-          url:"/imgs/gramineas-aveia-preta.png",
+          url:"/imgs/ervilha-forrageira.png",
           nome:"Ervilha forrageira",
         },
         feijao:{
-          url:"/imgs/gramineas-centeio.png",
+          url:"/imgs/mungo.jpg",
           nome:"Feijão mungo",
         },
         estilosantes:{
@@ -81,32 +81,32 @@ export const MixProvider = ({ children }) => {
     },
     asteraceas:{
       menu:{
-        aveiabranca:{
-          url:"/imgs/gramineas-aveia-branca.png",
+        girassol:{
+          url:"/imgs/girassol.png",
           nome:"Girassol",
         },
       },
     },
     poligonaceas:{
       menu:{
-        aveiabranca:{
-          url:"/imgs/gramineas-aveia-branca.png",
+        trigo:{
+          url:"/imgs/trigo-mourisco.png",
           nome:"Trigo mourisco",
         },
       },
     },
     brassicas:{
       menu:{
-        aveiabranca:{
-          url:"/imgs/gramineas-aveia-branca.png",
+        nabo:{
+          url:"/imgs/nabo-forrageiro.png",
           nome:"Nabo forrageiro",
         },
-        aveiapreta:{
-          url:"/imgs/gramineas-aveia-preta.png",
+        nabope:{
+          url:"/imgs/nabopato.png",
           nome:"Nabo pé de pato",
         },
-        centeio:{
-          url:"/imgs/gramineas-centeio.png",
+        crambe:{
+          url:"/imgs/crambe.jpg",
           nome:"Crambe",
         },
       },
