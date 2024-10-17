@@ -10,8 +10,9 @@ export async function middleware(request: NextRequest) {
     const isProtectedRoute = protectedRoutes.includes(path)
 
     if (isProtectedRoute) {
+        console.log('here 13',isProtectedRoute)
         const token = cookies().get('auth-token')?.value
-
+        console.log('here 15', token)
         if (!await decrypt(token)) return NextResponse.redirect(new URL('/login', request.url))
     }
 
