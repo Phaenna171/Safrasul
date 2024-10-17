@@ -1856,6 +1856,442 @@ export const ProductProvider = ({ children }) => {
 
     },
 
+    Gramas: {
+      // DADOS DA CATEGORIA
+      grid: {
+        images: [
+          '/imgs/products/LEGUMINOSAS/Crotalaria_Ochroleuca/leguminosa_crotala╠üria_Ochroleuca_.jpg',
+          '/imgs/products/LEGUMINOSAS/Crotalaria_Spectabilis/leguminosa_crotalaria_spectabilis_4_grid.jpg',
+          '/imgs/products/LEGUMINOSAS/EstilosanteCampoGrande/leguminosa_estilosantes_campo-grande_.jpg',
+          '/imgs/products/LEGUMINOSAS/Feijao_Guandu/leguminosa_feijao_guandu_1_grid.jpg',
+          '/imgs/products/LEGUMINOSAS/Mandarim/leguminosa_mandarim_1_grid_slide.jpg',
+        ],
+        titles: [
+          'Crotalária Ochroleuca',
+          'Crotalaria spectabilis',
+          'Estilosantes Campo Grande',
+          'Feijão-guandú',
+          'Mandarim ',
+        ],
+        descriptions: [
+          'Leguminosas cv.Marandú',
+          'Leguminosas cv.BRS Piatã',
+          'Leguminosas cv.Xaraés',
+          'Cajanus cajan (L.) Millsp.',
+          'Cajanus cajan cv. BRS Mandarim',
+        ],
+      },
+      index: {
+        title: ["Leguminosas"],
+        paragraphs: [
+          "Um dos mais populares capins do Brasil, o gênero Brachiaria é cultivado em aproximadamente 70 milhões de hectares no país. Apresentando variabilidade quanto a tolerência à seca e ao frio, época de florescimento, tolerância a solos úmidos, resistência à cigarrinha, entre outros fatores.",
+
+          "Atualmente, são cultivados no Brasil mais de 15 gramíneas do gênero Brachiaria, entre cultivares e híbridos, e vários outros estão em fase de pesquisa e desenvolvimento para serem lanãdos nos próximos anos.",
+
+          "As Brachiarias possuem boa abragência de solos, alta capacidade de competição com invasoras e estabelecimento acelerado. A escolha do melhor capim Brachiaria a ser plantado em um terreno é ponto fundamental para se consolidar uma excelente pastagem.",
+
+          "No Brasil, nossa empresa é referência na produção, industrialização e comercialização de sementes do gênero Brachiaria.",
+
+          "Nosso Departamento Técnico pode auxiliá-lo na escolha da melhor Brachiaria a ser utilizada em sua propriedade. Entre em contato conosco e faça a melhor escolha."
+        ],
+        url: "/imgs/video-produtos.png"
+
+      },
+
+      // DADOS DA SEMENTE
+      intro: [
+        {
+          img: '/imgs/products/LEGUMINOSAS/Crotalaria_Ochroleuca/leguminosa_crotala╠üria_Ochroleuca_.jpg',
+          txt: "Produtividade e resultado que seu campo precisa!"
+        },
+        {
+          img: '/imgs/products/LEGUMINOSAS/Crotalaria_Spectabilis/leguminosa_crotalaria_spectabilis_2_banner.jpg',
+          txt: "Produtividade e resultado que seu campo precisa!"
+        },
+        {
+          img: '/imgs/products/LEGUMINOSAS/EstilosanteCampoGrande/leguminosa_estilosantes_campo-grande_.jpg',
+          txt: "Produtividade e resultado que seu campo precisa!"
+        },
+        {
+          img: '/imgs/products/LEGUMINOSAS/Feijao_Guandu/leguminosa_feijao_guandu_3_banner.jpg',
+          txt: "Produtividade e resultado que seu campo precisa!"
+        },
+        {
+          img: '/imgs/products/LEGUMINOSAS/Mandarim/leguminosa_mandarim_1_banner.jpg',
+          txt: "Produtividade e resultado que seu campo precisa!"
+        },
+      ],
+      cabecalho: [
+        {
+          title: "Crotalária Ochroleuca",
+          subtitle: "",
+          description: "",
+        },
+        {
+          title: "Crotalaria spectabilis",
+          subtitle: "",
+          description: "",
+        },
+        {
+          title: "Estilosantes Campo Grande",
+          subtitle: "",
+          description: "S. capitata e S. macrocephala cv. Campo Grande",
+        },
+        {
+          title: "Feijão-guandú",
+          subtitle: "(Feijão-guandú anão IAPAR 43 - Aratã)",
+          description: "Cajanus cajan (L.) Millsp",
+        },
+        {
+          title: "Mandarim",
+          subtitle: "(Feijão guandú)",
+          description: "Cajanus cajan cv. BRS Mandarim",
+        },
+      ],
+      slides: [
+        [
+          '/imgs/products/LEGUMINOSAS/Crotalaria_Ochroleuca/leguminosa_crotala╠üria_Ochroleuca_.jpg',
+          '/imgs/products/LEGUMINOSAS/Crotalaria_Ochroleuca/leguminosa_crotala╠üria_Ochroleuca_.jpg',
+          '/imgs/products/LEGUMINOSAS/Crotalaria_Ochroleuca/leguminosa_crotala╠üria_Ochroleuca_.jpg',
+
+        ],
+        [
+          '/imgs/products/LEGUMINOSAS/Crotalaria_Spectabilis/leguminosa_crotalaria_spectabilis_1_slide.jpg',
+          '/imgs/products/LEGUMINOSAS/Crotalaria_Spectabilis/leguminosa_crotalaria_spectabilis_3_slide.jpg',
+
+        ],
+        [
+          '/imgs/products/LEGUMINOSAS/EstilosanteCampoGrande/leguminosa_estilosantes_campo-grande_.jpg',
+          '/imgs/products/LEGUMINOSAS/EstilosanteCampoGrande/leguminosa_estilosantes_campo-grande_.jpg',
+          '/imgs/products/LEGUMINOSAS/EstilosanteCampoGrande/leguminosa_estilosantes_campo-grande_.jpg',
+
+        ],
+        [
+          '/imgs/products/LEGUMINOSAS/Feijao_Guandu/leguminosa_feijao_guandu_2_slide.jpg',
+          '/imgs/products/LEGUMINOSAS/Feijao_Guandu/leguminosa_feijao_guandu_2_slide.jpg',
+          '/imgs/products/LEGUMINOSAS/Feijao_Guandu/leguminosa_feijao_guandu_2_slide.jpg',
+
+        ],
+        [
+          '/imgs/products/LEGUMINOSAS/Mandarim/leguminosa_mandarim_1_grid_slide.jpg',
+          '/imgs/products/LEGUMINOSAS/Mandarim/leguminosa_mandarim_1_grid_slide.jpg',
+          '/imgs/products/LEGUMINOSAS/Mandarim/leguminosa_mandarim_1_grid_slide.jpg',
+
+        ],
+      ],
+      textos: [
+        {
+          introducao: [
+            "É uma leguminosa anual de primavera-verão de ciclo relativamente longo. É agressiva e rústica, resistente às condições adversas de clima e solo por causa das raízes profundas que rompem as camadas adensadas do solo. É utilizada na sucessão da soja em áreas com infestação mista dos nematoides das galhas e das lesões radiculares, com destaque para o Pratylenchus brachyurus. Consorcia muito bem com o Milheto. Apresenta boa produção de biomassa e fixação de nitrogênio, sendo também recomendada para recuperação de solos degradados. Culturas/utilização: soja, milho, culturas perenes e cana-de-açúcar.",
+          ],
+          vantagens: [
+            "Controle de nematoides: a crotalária-ochroleuca é considerada a leguminosa mais eficiente na redução da população de nematoides. Quando utilizada após o cultivo da soja, evita a ocorrência de infestações de nematoides.",
+            "Melhoria da qualidade do solo: o sistema radicular da crotalária-ochroleuca é agressivo, o que melhora a qualidade física do solo. As raízes conseguem romper camadas densas do solo, tornando-o resistente ao estresse hídrico. A crotalária-ochroleuca também contribui para a melhoria da estrutura do solo, aumentando a capacidade de retenção de água e reduzindo a erosão.",
+            "Adubação verde: a crotalária-ochroleuca é uma ótima opção de adubo verde, principalmente nas lavouras de cana-de-açúcar, hortaliças, algodão e outros grãos. A planta libera substâncias químicas no solo que inibem o desenvolvimento de organismos, reduzindo a necessidade de pesticidas.",
+            "Rusticidade: a crotalária-ochroleuca é uma espécie rústica que apresenta desenvolvimento viável em solos com baixa disponibilidade de nutrientes e de matéria orgânica. Também possui boa capacidade de resistência ao déficit hídrico.",
+            "Outros benefícios: a crotalária-ochroleuca também contribui para a redução de plantas daninhas na área, nitrogenação do solo e atrai polinizadores e outras espécies benéficas para a lavoura."
+          ],
+          obs: [
+          ],
+        },
+        {
+          introducao: [
+            "É uma leguminosa anual de primavera-verão cuja principal característica é ser má hospedeira de nematoides. É considerada a leguminosa mais eficiente na redução da população da maior parte dos nematoides, com destaque para os nematoides formadores de galhas, cistos e lesões radiculares.Destaca-se também pela capacidade de fixação biológica de nitrogênio e pela produção de massa verde.Devido ao seu porte médio, pode ser utilizada também nas entrelinhas de culturas perenes, sem prejudicar o trânsito de máquinas ou pessoas. Atualmente é a espécie mais utilizada no consórcio com milho de segunda safra, com o objetivo de reduzir a população de nematoides. Culturas/utilização: soja, milho, culturas perenes, algodão, hortaliças e cana-de-açúcar. Favorece o controle de nematoides.",
+          ],
+          vantagens: [
+            "Controle de nematóides: A Crotalária-spectabilis é considerada a espécie mais eficiente na redução de nematóides de galha, cisto e lesões radiculares em áreas de culturas anuais ou perenes. As sementes da Crotalária-spectabilis contêm proteínas que ajudam a reduzir as populações de nematóides. A planta também adiciona matéria orgânica ao solo, estimulando o desenvolvimento de microfloras que controlam os nematóides.",
+            "Fixação biológica de nitrogênio: A Crotalária-spectabilis tem uma excelente fixação biológica de nitrogênio atmosférico. Quando em conjunto com bactérias presentes, a planta atua na fixação de nitrogênio no solo.",
+            "Produção de massa verde: A Crotalária-spectabilis é uma ótima produtora de massa verde. A planta pode ser utilizada como adubação verde, reduzindo a necessidade de aplicação de fertilizantes no solo.",
+            "Descompactação do solo: A Crotalária-spectabilis tem um sistema radicular ramificado e raiz pivotante profunda, que auxiliam na descompactação do solo.",
+            "Proteção contra a erosão: A Crotalária-spectabilis promove a proteção do solo contra a erosão.",
+            "Adaptação a climas tropicais e subtropicais: A Crotalária-spectabilis adapta-se a climas tropicais e subtropicais.",
+
+          ],
+          obs: [
+          ],
+        },
+        {
+          introducao: [
+            "O estilosantes Campo Grande é uma mistura de duas espécies de leguminosas, Stylosanthes capitata e S. macrocephala, coletadas em solos de Areia Quartzosa e de baixa fertilidade, remanescentes de experimento anterior, que, após vários multicruzamentos, teve sua seleção definida. O Campo Grande é um composto de duas espécies forrageiras: o Stylosanthes macrocephala, que possui um crescimento mais horizontal, com folhas pontiagudas e flores, na sua maioria, amarelas; e o Stylosanthes capitata, que possui hábito de crescimento mais vertical, com folhas mais arredondadas e flores que variam da cor bege ao amarelo. Ambas as espécies podem chegar a mais de um metro de altura e seu florescimento ocorre nos meses de abril a maio, respectivamente, e a principal característica da sua persistência é a ressemeadura natural, já que as suas plantas são predominantemente anuais e bianuais.",
+          ],
+          vantagens: [
+            "Resistente à antracnose.",
+            "Boa qualidade de forragem.",
+            "Boa cobertura do solo.",
+            "Contribui para a redução de plantas daninhas na área.",
+            "Melhoria da dieta animal.",
+            "Nitrogenação do solo.",
+          ],
+          obs: [
+            "Necessidade de cuidados no manejo do pasto para evitar o domínio ou o desaparecimento da leguminosa.",
+            "Não tolera solos mal drenados e/ou encharcados.",
+          ],
+        },
+        {
+          introducao: [
+            "O guandu anão (Cajanus cajan (L.) Millsp.) é uma leguminosa originária da Ásia, rica em proteínas e bem adaptada às condições brasileiras. A variedade IAPAR 43 – Aratã foi desenvolvida para produção de grãos. Mas também pode ser utilizada como adubo verde descompactador do solo. Pode ser fornecido aos animais em consórcio com gramíneas, como feno, picado ainda verde, farelo (moído quando seco), na área para ser pastejado, ou como banco de proteína na área.",
+          ],
+          vantagens: [
+            "Porte baixo que facilita o manejo.",
+            "Adubo verde com grande capacidade de nodulação e fixação de nitrogênio.",
+            "Cicla nutrientes e promove a liberação de fosforo no solo.",
+            "O vigoroso sistema radicular da cultura descompacta o solo em subsuperfície.",
+            "Rico em proteínas, pode ser utilizado tanto na alimentação humana como animal.",
+            "É pouco exigente em relação à fertilidade do solo e resistente à seca.",
+          ],
+          obs: [
+            "Não tolera solos encharcados e seu estabelecimento é lento",
+          ],
+        },
+        {
+          introducao: [
+            "É uma leguminosa originária da Índia, lançada no Brasil em 2007, também é conhecida como feijão guandu.",
+          ],
+          vantagens: [
+            "É de fácil implantação e manejo, inclusive em solos de baixa fertilidade, tem alta tolerância a solos ácidos, sendo muito responsivo a adubação.",
+            "Tem alta produtividade de matéria seca, boa persistência, tolerando longos períodos de estiagem.",
+            "É indicada para alimentação animal, adubação verde e recuperação de pastagens degradadas. Pode ser utilizado em apoio ao processo de produção de cana, na recuperação de áreas degradadas e no cultivo consorciado com milho e braquiária.",
+          ],
+          obs: [
+            "Não tolera solos encharcados e seu estabelecimento é lento",
+          ],
+        },
+      ],
+      utilizacoes: [
+        [
+          "/icons/icone_pastoreio.svg",
+          "/icons/icone_fenacao.svg",
+          "/icons/icone_palhada.svg",
+        ],
+        [
+          "/icons/icone_pastoreio.svg",
+          "/icons/icone_fenacao.svg",
+          "/icons/icone_palhada.svg",
+        ],
+        [
+          "/icons/icone_pastoreio.svg",
+          "/icons/icone_fenacao.svg",
+          "/icons/icone_palhada.svg",
+        ],
+        [
+          "/icons/icone_pastoreio.svg",
+          "/icons/icone_fenacao.svg",
+          "/icons/icone_palhada.svg",
+        ],
+        [
+          "/icons/icone_pastoreio.svg",
+          "/icons/icone_fenacao.svg",
+          "/icons/icone_palhada.svg",
+        ],
+      ],
+      indicacoes: [
+        [
+          "/icons/icone_gado_de_leite.svg",
+          "/icons/icone_gado_de_corte.svg",
+        ],
+        [
+          "/icons/icone_gado_de_leite.svg",
+          "/icons/icone_gado_de_corte.svg",
+        ],
+        [
+          "/icons/icone_gado_de_leite.svg",
+          "/icons/icone_gado_de_corte.svg",
+        ],
+        [
+          "/icons/icone_gado_de_leite.svg",
+          "/icons/icone_gado_de_corte.svg",
+        ],
+        [
+          "/icons/icone_gado_de_leite.svg",
+          "/icons/icone_gado_de_corte.svg",
+        ],
+      ],
+      infosTabelaNome: [
+        [
+          "Hábito de crescimento",
+          "Altura da Planta",
+          "Intensidade de perfilhamento basal",
+          "Arquitetura da folha",
+          "Comprimento da lâmina foliar",
+          "Pilosidade da lâmina foliar",
+          "Quantidade de rácemos",
+          "Inserção da espigueta na ráquis",
+          "Hábito de crescimento",
+          "Altura da Planta",
+          "Intensidade de perfilhamento basal",
+          "Arquitetura da folha",
+          "Comprimento da lâmina foliar",
+          "Pilosidade da lâmina foliar",
+          "Quantidade de rácemos",
+          "Inserção da espigueta na ráquis",
+        ],
+        [
+          "Hábito de crescimento",
+          "Altura da Planta",
+          "Intensidade de perfilhamento basal",
+          "Arquitetura da folha",
+          "Comprimento da lâmina foliar",
+          "Pilosidade da lâmina foliar",
+          "Quantidade de rácemos",
+          "Inserção da espigueta na ráquis",
+          "Hábito de crescimento",
+          "Altura da Planta",
+          "Intensidade de perfilhamento basal",
+          "Arquitetura da folha",
+          "Comprimento da lâmina foliar",
+          "Pilosidade da lâmina foliar",
+          "Quantidade de rácemos",
+          "Inserção da espigueta na ráquis",
+        ],
+        [
+          "Hábito de crescimento",
+          "Altura da Planta",
+          "Intensidade de perfilhamento basal",
+          "Arquitetura da folha",
+          "Comprimento da lâmina foliar",
+          "Pilosidade da lâmina foliar",
+          "Quantidade de rácemos",
+          "Inserção da espigueta na ráquis",
+          "Hábito de crescimento",
+          "Altura da Planta",
+          "Intensidade de perfilhamento basal",
+          "Arquitetura da folha",
+          "Comprimento da lâmina foliar",
+          "Pilosidade da lâmina foliar",
+          "Quantidade de rácemos",
+          "Inserção da espigueta na ráquis",
+        ],
+        [
+          "Hábito de crescimento",
+          "Altura da Planta",
+          "Intensidade de perfilhamento basal",
+          "Arquitetura da folha",
+          "Comprimento da lâmina foliar",
+          "Pilosidade da lâmina foliar",
+          "Quantidade de rácemos",
+          "Inserção da espigueta na ráquis",
+          "Hábito de crescimento",
+          "Altura da Planta",
+          "Intensidade de perfilhamento basal",
+          "Arquitetura da folha",
+          "Comprimento da lâmina foliar",
+          "Pilosidade da lâmina foliar",
+          "Quantidade de rácemos",
+          "Inserção da espigueta na ráquis",
+        ],
+        [
+          "Hábito de crescimento",
+          "Altura da Planta",
+          "Intensidade de perfilhamento basal",
+          "Arquitetura da folha",
+          "Comprimento da lâmina foliar",
+          "Pilosidade da lâmina foliar",
+          "Quantidade de rácemos",
+          "Inserção da espigueta na ráquis",
+          "Hábito de crescimento",
+          "Altura da Planta",
+          "Intensidade de perfilhamento basal",
+          "Arquitetura da folha",
+          "Comprimento da lâmina foliar",
+          "Pilosidade da lâmina foliar",
+          "Quantidade de rácemos",
+          "Inserção da espigueta na ráquis",
+        ],
+      ],
+      infosTabelaValor: [
+        [
+          "Cepitoso",
+          "Média de 53 cm",
+          "Média",
+          "Arqueada",
+          "Médio",
+          "Pouca/Média",
+          "Média (4)",
+          "Uniserrada",
+          "Cepitoso",
+          "Média de 53 cm",
+          "Média",
+          "Arqueada",
+          "Médio",
+          "Pouca/Média",
+          "Média (4)",
+          "Uniserrada",
+        ],
+        [
+          "Cepitoso",
+          "Média de 53 cm",
+          "Média",
+          "Arqueada",
+          "Médio",
+          "Pouca/Média",
+          "Média (4)",
+          "Uniserrada",
+          "Cepitoso",
+          "Média de 53 cm",
+          "Média",
+          "Arqueada",
+          "Médio",
+          "Pouca/Média",
+          "Média (4)",
+          "Uniserrada",
+        ],
+        [
+          "Cepitoso",
+          "Média de 53 cm",
+          "Média",
+          "Arqueada",
+          "Médio",
+          "Pouca/Média",
+          "Média (4)",
+          "Uniserrada",
+          "Cepitoso",
+          "Média de 53 cm",
+          "Média",
+          "Arqueada",
+          "Médio",
+          "Pouca/Média",
+          "Média (4)",
+          "Uniserrada",
+        ],
+        [
+          "Cepitoso",
+          "Média de 53 cm",
+          "Média",
+          "Arqueada",
+          "Médio",
+          "Pouca/Média",
+          "Média (4)",
+          "Uniserrada",
+          "Cepitoso",
+          "Média de 53 cm",
+          "Média",
+          "Arqueada",
+          "Médio",
+          "Pouca/Média",
+          "Média (4)",
+          "Uniserrada",
+        ],
+        [
+          "Cepitoso",
+          "Média de 53 cm",
+          "Média",
+          "Arqueada",
+          "Médio",
+          "Pouca/Média",
+          "Média (4)",
+          "Uniserrada",
+          "Cepitoso",
+          "Média de 53 cm",
+          "Média",
+          "Arqueada",
+          "Médio",
+          "Pouca/Média",
+          "Média (4)",
+          "Uniserrada",
+        ],
+      ]
+
+    },
   };
 
 

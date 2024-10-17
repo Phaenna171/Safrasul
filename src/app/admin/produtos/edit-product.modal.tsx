@@ -189,6 +189,7 @@ export default function EditProductModal({ isOpen, onClose, product }) {
           <option selected value="Brachiaria">Brachiaria</option>
           <option value="Panicum">Panicum</option>
           <option value="Leguminosas">Leguminosas</option>
+          <option value="Gramas">Gramas</option>
         </select>
 
         <label className="block mb-2">Carrossel de fotos:</label>

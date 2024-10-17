@@ -86,11 +86,7 @@ export default function AddProductModal({ isOpen, onClose }) {
     if (indications.filter(el => el.selected).length == 0) return alert('Selecione ao menos uma indicação')
 
     const formData = new FormData();
-    console.log(e.currentTarget.title.value
-      , e.currentTarget.subtitle.value
-      , e.currentTarget.category.value
-      , e.currentTarget.description.value
-      , e.currentTarget.tableTitle.value)
+
     formData.append('title', e.currentTarget.title.value);
     formData.append('subtitle', e.currentTarget.subtitle.value);
     formData.append('category', e.currentTarget.category.value);
@@ -153,6 +149,7 @@ export default function AddProductModal({ isOpen, onClose }) {
           <option selected value="Brachiaria">Brachiaria</option>
           <option value="Panicum">Panicum</option>
           <option value="Leguminosas">Leguminosas</option>
+          <option value="Gramas">Gramas</option>
         </select>
 
         <label className="block mb-2">Carrossel de fotos:</label>
