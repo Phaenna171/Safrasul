@@ -1,16 +1,10 @@
-'use server'
-// import 'server-only'
-import { jwtVerify } from 'jose'
-
-const secretKey = process.env.JWT_SECRET
-const encodedKey = new TextEncoder().encode(secretKey)
+import { jwtDecode } from 'jwt-decode';
 
 export async function decrypt(token: string | undefined = '') {
     try {
-        console.log('here 10',encodedKey, secretKey)
-        await jwtVerify(token, encodedKey)
-        console.log('here 10',encodedKey, secretKey)
-
+        console.log('here   ')
+        const decoded = jwtDecode(token);
+        console.log(decoded)
         return true
     } catch (error) {
         console.error('Failed to verify session')

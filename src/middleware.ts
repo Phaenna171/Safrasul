@@ -6,7 +6,7 @@ const protectedRoutes = ['/admin']
 
 export async function middleware(request: NextRequest) {
     const path = request.nextUrl.pathname
-
+    console.log('here')
     const isProtectedRoute = protectedRoutes.includes(path)
 
     if (isProtectedRoute) {
