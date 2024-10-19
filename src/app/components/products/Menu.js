@@ -23,7 +23,7 @@ export default function Menu() {
           <li
             key={category}
             onClick={() => handleCategoryChange(category)}
-            className={`text-sm sm:text-base cursor-pointer font-openSans ${selectedCategory === category ? 'text-white' : 'font-bold font-xl'}`}
+            className={`text-sm sm:text-base cursor-pointer font-openSans ${selectedCategory === category ? 'text-white font-bold font-xl' : 'text-white font-light'}`}
           >
             {category}
           </li>
