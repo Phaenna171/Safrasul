@@ -10,7 +10,7 @@ export default function Industrializacao() {
             Industrialização em UBS próprias
           </h1>
           <p className="text-center text-[#354D4D] font-openSans leading-6 sm:leading-7 md:leading-8 lg:leading-8 text-sm sm:text-base md:text-lg font-medium md:text-start">
-            Todas as sementes são industrializadas em nossas UBS, onde o processo é rigorosamente controlado por profissionais focados na qualidade. Após análise laboratorial inicial de pureza, germinação, vigor, umidade e espécies nocivas, as sementes são processadas conforme o Protocolo de Controle Interno de Qualidade (CIC), em conformidade com o MAPA e órgãos reguladores do setor. Nossa UBS em Formoso-GO tem capacidade para processar XXXX toneladas de produto acabado.
+            Todas as sementes são industrializadas em nossas UBS, onde o processo é rigorosamente controlado por profissionais focados na qualidade. Após análise laboratorial inicial de pureza, germinação, vigor, umidade e espécies nocivas, as sementes são processadas conforme o Protocolo de Controle Interno de Qualidade (CIC), em conformidade com o MAPA e órgãos reguladores do setor. Nossa UBS em Formoso-GO tem capacidade para processar 105.000 kg/dia toneladas de produto acabado.
           </p>
         </div>
         <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[400px]">
