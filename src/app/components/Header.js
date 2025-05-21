@@ -86,6 +86,17 @@ export default function Header({ footerRef }) {
             >
               Contato
             </Link>
+            <Link
+              href="https://www.integracaosementes.com.br/ftr"
+              className={`text-lg leading-6 text-[#9B9B9B] font-openSans font-medium ${activeLink === "contact" ? "border-b-4 border-[#F17708] text-customGreen" : ""
+                }`}
+              onClick={(e) => {
+                e.preventDefault(); // Prevent default link behavior
+                scrollToFooter();
+              }}
+            >
+              Suporte Técnico
+            </Link>
           </PopoverGroup>
         </nav>
         <Dialog
